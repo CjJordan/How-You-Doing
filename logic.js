@@ -184,6 +184,38 @@ function getEmotion() {
 }
 
 //imgur
+//Authorization: Client-ID YOUR_CLIENT_ID
+//client id: 56a00a2b39ebf9a
+//client secret: 126548ec734680dff937ff16a35908205116ffee
+//base url: https://api.imgur.com/3/
 
-anger: 0.00001 not present
-happiness: 1 positive
+//returns specific image with id
+//image url: https://api.imgur.com/3/account/{username}/image/{id}
+
+//returns an array of ids associated with the account
+//id url: https://api.imgur.com/3/account/{username}/images/ids/{page}
+
+  function imgurUpload(token) {
+
+  	var clientID: 56a00a2b39ebf9a;
+    var auth;
+    if (token) auth = 'kfuetterer ' + token;
+    else auth = 'Client-ID ' + clientId;
+
+    $.ajax({
+      url: 'https://api.imgur.com/3/image',
+      type: 'POST',
+      headers: {
+        Authorization: auth,
+        Accept: 'application/json'
+      },
+      data: {
+        image: localStorage.dataBase64,
+        type: 'base64'
+      },
+      success: function(result) {
+        var id = result.data.id;
+        window.location = 'https://imgur.com/gallery/' + id;
+      }
+    });
+  }
