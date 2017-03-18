@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How You Doin'</title>
+	<meta charset='utf-8'>
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.0.js" integrity="sha256-wPFJNIFlVY49B+CuAIrDr932XSb6Jk3J1M22M3E2ylQ=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="main.css" type="text/css" media="all">
+	<script src="logic.js"></script>
+</head>
+<body>
+
+	<h1>How You Doin'</h1>
+
+	<div class="contentarea">
+	  	<div class="camera">
+	    	<video id="video">Video stream not available.</video>
+	    	<button id="startbutton">Take photo</button> 
+	  	</div>
+	  	<canvas id="canvas"></canvas>
+	  	<div class="output">
+	    	<img id="photo" alt="The screen capture will appear in this box."> 
+	  	</div>
+	</div>
+
+	<button onclick="getEmotion()">Get Emotion</button>
+
+</body>
+</html>
