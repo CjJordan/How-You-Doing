@@ -13,160 +13,208 @@
     height:100%;
     width:100%;
 }
-*/.off-canvas-content
-{
-  overflow: hidden;
+*/
+
+.off-canvas-content {
+    overflow: hidden;
 }
+body {
+    background: #36c3e5;
+    background: #FF4136;
+}
+.callout {
+    background: #36c3e5;
+    background: #FF4136;
+    padding: 10px;
+    color: white;
+    text-align: right;
+    border: none;
+    margin-top: 0px;
+}
+/* removes the border */
 
-	body {
-		background: #36c3e5;
-		background: #FF4136;
-		
-	}
-	
-	.callout{
-		background: #36c3e5;
-		background: #FF4136;
-		padding:10px;
-		color: white;
-		text-align: right;
-		border: none;
-		margin-top: 0px;
-	
-	}
-		/* removes the border */
-		.x-callout:before{
-	    display: none;
-	 
-	}
-	
-	.callout H1{
-		
-		font-family: 'Syncopate', sans-serif;
-		font-weight: bold;
-		font-size: 90px;
-	
-	}
-	
-	#feelSpectrumText {
-		letter-spacing: 1em;
-		line-height: 2px;
-		margin-bottom: 6px;
-		text-align: left;
-
-	
-	}
-	/**{
+.x-callout:before {
+    display: none;
+}
+.callout H1 {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+}
+#feelSpectrumText {
+    letter-spacing: 1em;
+    line-height: 2px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+/**{
 		background: #ff7bac;
 	}*/
-	#talkInvite{
-		font-size: 45px;
-		font-family: 'Gloria Hallelujah', cursive;
-		font-family: 'Architects Daughter', cursive;
-		font-family: 'Jura', sans-serif;
-		font-family: 'Passion One', cursive;
-		font-family: 'Comfortaa', cursive;
-		line-height: 3px;
-		color:#FF4136 ;
-		margin-bottom: 2px;
-		margin-top: 20px;
-		background: white;
-		border-radius:40%;
-	}
 
-		#selfieInvite{
-		font-size: 60px;
-		font-family: 'Gloria Hallelujah', cursive;
-		font-family: 'Architects Daughter', cursive;
-		font-family: 'Jura', sans-serif;
-		font-family: 'Passion One', cursive;
-		font-family: 'Comfortaa', cursive;
-		line-height: 3px;
-		color:#FF4136 ;
-		margin-bottom: 2px;
-		margin-top: 20px;
-		background: white;
-		border-radius:40%;
-		text-align: right;
-	}
-
-	#keepButton {
-	/*	float:left;*/
-
-	}
-
-	#deleteButton {
-/*float:left;*/
-	}
-	
-	#storeTxtButton {
-/*float:left;*/
-
-	}
-	
-	/*#giveText{
+#talkInvite {
+    font-size: 45px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Passion One', cursive;
+    font-family: 'Comfortaa', cursive;
+    line-height: 3px;
+    color: #FF4136;
+    margin-bottom: 2px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 40%;
+}
+#selfieInvite {
+    font-size: 60px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Passion One', cursive;
+    font-family: 'Comfortaa', cursive;
+    line-height: 3px;
+    color: #FF4136;
+    margin-bottom: 2px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 40%;
+    text-align: right;
+}
+#selfieColorButton {
+    line-height: 18px;
+}
+#selfieColorButton:hover #selfieFrame {
+    color:black;
+}
+#keepButton {
+    /*	float:left;*/
+}
+#deleteButton {
+    /*float:left;*/
+}
+#storeTxtButton {
+    /*float:left;*/
+}
+#selfieFrame {
+    font-size: 20px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Passion One', cursive;
+    font-family: 'Comfortaa', cursive;
+    line-height: 13px;
+    padding: 20px;
+    height: 350px;
+    width: 250px;
+    color: #FF4136;
+    margin-bottom: 2px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 60%;
+    text-align: right;
+    border: 20px solid lightgreen;
+    padding: 10px;
+}
+}
+/*#giveText{
 		font-size: 30px;
 		color:#FF4136;
 		line-height: 6px;
 	
 	}*/
-	
-	#sayText {
-		font-size: 20px;
-		color:#666;
-		
-	
-	}
-	
-	.box {
-	  float: left;
-	  width: 35px;
-	  height: 35px;
-	  margin: 5px;
-	  border: 5px solid white;
-	  align-items: right;
-	}
-	
-	 
-	
-	.box:hover{
-	        border-radius:40%;
-	        box-shadow:
-	                1px 1px white,
-	                2px 2px white,
-	                3px 3px white;
-	        -webkit-transform: translateX(-3px);
-	        transform: translateX(-3px);
-	}
-#cameraFeel{
-	  float: right;
-	  width: 40%;
-	  height: 40%;
-	  margin-right: 50px;
-	  padding:0px;
-	  border-style: none;
-	  color: white;
-	  font-size: 400px;
-	}
-	
-#cameraFeel:hover{
-	  float: center;
-	  width: 40%;
-	  height: 40%;
-	  margin-right: 80px;
-	  padding:0px;
-	  border-style: none;
-	  font-size: 400px;
-	  color: #13b4ff;
 
-	}
-
-	#smCamera {
-	color:black;
-	text-align: right;
-
-	}
-	/*#cameraFeel{
+#sayText {
+    font-size: 20px;
+    color: #666;
+}
+#pencilColor {
+    font-size: 350px;
+    float: right;
+    width: 40%;
+    height: 40%;
+    margin-right: 50px;
+    padding: 0px;
+    color: white;
+}
+#pencilColor:hover {
+    float: center;
+    width: 40%;
+    height: 40%;
+    margin-right: 80px;
+    padding: 0px;
+    border-style: none;
+    font-size: 350px;
+    color: #62FA44;
+    color: navajowhite;
+}
+#getYourTextColor {
+    /* @extend .transition*/
+    
+    margin-top: 20px;
+    background-color: #FF4136;
+    border: 1px solid #FF4136;
+    line-height: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px 15px;
+    /*	    border-radius: 60px;*/
+    
+    color: white;
+    letter-spacing: 0.4em;
+    position: relative;
+    top: 20px;
+    z-index: 1;
+    font-size: 16px;
+    font-weight: bold;
+}
+#getYourTextColor:hover {
+    color: white;
+    background-color: salmon;
+    border: 2px solid white;
+}
+#getYourTextColor:hover #pencilColor {
+    color: lightgreen;
+}
+.box {
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    border: 5px solid white;
+    align-items: right;
+}
+.box:hover {
+    border-radius: 40%;
+    box-shadow: 1px 1px white, 2px 2px white, 3px 3px white;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+#cameraFeel {
+    float: right;
+    width: 40%;
+    height: 40%;
+    margin-right: 50px;
+    padding: 0px;
+    border-style: none;
+    color: white;
+    font-size: 400px;
+}
+#cameraFeel:hover {
+    float: center;
+    width: 40%;
+    height: 40%;
+    margin-right: 80px;
+    padding: 0px;
+    border-style: none;
+    font-size: 400px;
+    color: #13b4ff;
+    color: navajowhite;
+}
+#smCamera {
+    color: black;
+    text-align: right;
+}
+/*#cameraFeel{
 		visibility: hidden;
 	}
 	
@@ -177,63 +225,59 @@
 	} 
 
 	*/
-#pencilFeel{
-	float:right;
-  width: 40%;
-  height: 40%;
-  margin-right: 50px;
-  padding:0px;
-  color: white;
-  font-size: 400px;
-  
+
+#pencilFeel {
+    float: right;
+    width: 40%;
+    height: 40%;
+    margin-right: 50px;
+    padding: 0px;
+    color: white;
+    font-size: 400px;
 }
-
-#pencilFeel:hover{
-	  float: center;
-	  width: 40%;
-	  height: 40%;
-	  margin-right: 80px;
-	  padding:0px;
-	  border-style: none;
-	  font-size: 400px;
-	  color: #62FA44;
-	}
-
+#pencilFeel:hover {
+    float: center;
+    width: 40%;
+    height: 40%;
+    margin-right: 80px;
+    padding: 0px;
+    border-style: none;
+    font-size: 400px;
+    color: #62FA44;
+    color: navajowhite;
+}
 #textCamera {
-	font-size: 30px;
-	color:white;
-	padding-left: none;
-	text-align: center;
-	font-family: 'Syncopate', sans-serif;
-	margin-top: 30px;
-
+    font-size: 30px;
+    color: white;
+    padding-left: none;
+    text-align: center;
+    font-family: 'Syncopate', sans-serif;
+    margin-top: 30px;
 }
-
 #textPencil {
-	font-size: 30px;
-	color:white;
-	padding-left: none;
-	text-align: center;
-	font-family: 'Syncopate', sans-serif;
-		margin-top: 30px;
+    font-size: 30px;
+    color: white;
+    padding-left: none;
+    text-align: center;
+    font-family: 'Syncopate', sans-serif;
+    margin-top: 30px;
 }
-
-   #selfieCapture {
-      clear:both;
-      position: relative;
-      display: inline-block;
-      max-width: 500px;
-      min-width: 500px;
-      height: 400px;
-      box-sizing: border-box;
-      padding: 30px 20px;
-      background-color: white;
-      border-radius: 40px;
-      margin: 40px 20px;
-      font-family: "Helvetica" , sans-serif;
-     
-     
-  }
+#selfieCapture {
+    clear: both;
+    position: relative;
+    display: inline-block;
+    max-width: 500px;
+    min-width: 500px;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 40px;
+    margin: 40px 20px;
+    font-family: "Helvetica", sans-serif;
+    border: 7px solid #3e2b14;
+    padding: 10px;
+}
 /*	margin-top: 0;
 	padding: none;
 
@@ -243,36 +287,35 @@
   left: -60px;
   transform: rotate(270deg);*/
 }
-
 .icons {
-	border: .1px solid white;
-	border-radius: 40px;
-	padding: 10px 40px;
+    border: .1px solid white;
+    border-radius: 40px;
+    padding: 10px 40px;
 }
-
 }
-
-	/*.singleBracket {
+/*.singleBracket {
 		font-size: 300px;
 		/*margin: 5px;*/
-		/*transform: rotate(-90deg);
+/*transform: rotate(-90deg);
 		visibility: visible;
 		color: black;
 	/*	z-index: 1;*/
-	/*}*/
-	
-	/*.bracket /*.singleBracket*/ /*.button*/ /*#yearButton {
+/*}*/
+/*.bracket /*.singleBracket*/
+/*.button*/
+/*#yearButton {
 		visibility: hidden;
 	
 	}*/
-	
-	/*.bracket*//*.singleBracket*//*:hover .button #yearButton{
+/*.bracket*/
+/*.singleBracket*/
+/*:hover .button #yearButton{
 		
 		visibility: visible;  */
-		/*margin: 5px;*/
-		/*transform: rotate(-90deg);*/
-	} 
-	/*1.	anxious
+/*margin: 5px;*/
+/*transform: rotate(-90deg);*/
+}
+/*1.	anxious
 	2.	bored
 	3.	thoughtful
 	4.	happy
@@ -282,307 +325,265 @@
 	8.	disappointed
 	9.	exhausted
 	10.	satisfied*/
-	
-	
-	.feel {
-	   color:white;
-	   font-size: 18px;
-	}
-	
-	.blue {
-	  background: #13b4ff;
-	}
-	
-	.blue #blueFeel{
-		visibility: hidden;
-	}
-	
-	.blue:hover #blueFeel {
-	   visibility: visible;  
-	   position: relative;
-	   bottom:-40px; 
-	   right: -20px;
-	}  
-	
-	.purple {
-	  background: #ab3fdd;
-	}
-	
-	.purple #purpleFeel{
-		visibility: hidden;	
-	}
-	
-	.purple:hover #purpleFeel {
-	   visibility: visible;  
-	   position: relative;
-	   bottom:-40px; 
-	} 
-	
-	.pink{
-	  background: #FA40BC;
-	}
-	
-	.pink #pinkFeel{
-		visibility: hidden;	
-	}
-	
-	.pink:hover #pinkFeel {
-	   visibility: visible;  
-	   position: relative;
-	   bottom:-40px; 
-	} 
-	
-	
-	.salmon {
-	  background: salmon;
-	}
-	
-	.salmon #salmonFeel{
-		visibility: hidden;	
-	}
-	
-	.salmon:hover #salmonFeel {
-	   visibility: visible;  
-	   position: relative;
-	   bottom:-40px; 
-	} 
-	
-	.yellow {
-		background: yellow;
-	}
-	
-	.yellow #yellowFeel{
-		visibility: hidden;	
-	}
-	
-	.yellow:hover #yellowFeel {
-	   visibility: visible;  
-	   position: relative;
-	   bottom:-40px; 
-	} 
-	
-	.lightgreen {
-		background: lightgreen;
-	}
-	
-	.lightgreen #lightgreenFeel{
-		visibility: hidden;	
-	}
-	
-	.lightgreen:hover #lightgreenFeel {
-	   visibility: visible;  
-	   position: relative;
-	   bottom:-40px; 
-	} 
-	
-	.lightblue {
-		background: lightblue;
-	}
-	
-	.lightblue #lightblueFeel{
-		visibility: hidden;	
-	}
-	
-	.lightblue:hover #lightblueFeel {
-	   visibility: visible;  
-	   position: relative;
-	   bottom:-40px; 
-	} 
-	
-	.orange {
-		background: orange;
-	}
-	
-	.orange #orangeFeel{
-		visibility: hidden;	
-	}
-	
-	.orange:hover #orangeFeel {
-	   visibility: visible;  
-	   position: relative;
-	   bottom:-40px; 
-	} 
-	
-	.lime {
-		background: #62FA44;
-	}
-	
-	.lime #limeFeel{
-		visibility: hidden;	
-	}
-	
-	.lime:hover #limeFeel {
-	   visibility: visible;  
-	   position: relative;
-	   bottom:-40px; 
-	} 
-	
-	.candycane {
-		background: #E5071F;
-		}
-	
-	.candycane #candycaneFeel{
-		visibility: hidden;	
-	}
-	
-	.candycane:hover #candycaneFeel {
-	   visibility: visible;  
-	   position: relative;
-	   bottom:-40px; 
-	} 
-	
-	
-	#offCanvasBottom1 {
-		background: white;
-	}
-	
-	 /*form*/
 
+.feel {
+    color:white;
+    font-size: 18px;
+}
+.blue {
+    background: #13b4ff;
+}
+.blue #blueFeel {
+    visibility: hidden;
+}
+.blue:hover #blueFeel {
+    visibility: visible;
+    position: relative;
+    bottom:-40px;
+    right: -20px;
+}
+.purple {
+    background: #ab3fdd;
+}
+.purple #purpleFeel {
+    visibility: hidden;
+}
+.purple:hover #purpleFeel {
+    visibility: visible;
+    position: relative;
+    bottom:-40px;
+}
+.pink {
+    background: #FA40BC;
+}
+.pink #pinkFeel {
+    visibility: hidden;
+}
+.pink:hover #pinkFeel {
+    visibility: visible;
+    position: relative;
+    bottom:-40px;
+}
+.salmon {
+    background: salmon;
+}
+.salmon #salmonFeel {
+    visibility: hidden;
+}
+.salmon:hover #salmonFeel {
+    visibility: visible;
+    position: relative;
+    bottom:-40px;
+}
+.yellow {
+    background: yellow;
+}
+.yellow #yellowFeel {
+    visibility: hidden;
+}
+.yellow:hover #yellowFeel {
+    visibility: visible;
+    position: relative;
+    bottom:-40px;
+}
+.lightgreen {
+    background: lightgreen;
+}
+.lightgreen #lightgreenFeel {
+    visibility: hidden;
+}
+.lightgreen:hover #lightgreenFeel {
+    visibility: visible;
+    position: relative;
+    bottom:-40px;
+}
+.lightblue {
+    background: lightblue;
+}
+.lightblue #lightblueFeel {
+    visibility: hidden;
+}
+.lightblue:hover #lightblueFeel {
+    visibility: visible;
+    position: relative;
+    bottom:-40px;
+}
+.orange {
+    background: orange;
+}
+.orange #orangeFeel {
+    visibility: hidden;
+}
+.orange:hover #orangeFeel {
+    visibility: visible;
+    position: relative;
+    bottom:-40px;
+}
+.lime {
+    background: #62FA44;
+}
+.lime #limeFeel {
+    visibility: hidden;
+}
+.lime:hover #limeFeel {
+    visibility: visible;
+    position: relative;
+    bottom:-40px;
+}
+.candycane {
+    background: #E5071F;
+}
+.candycane #candycaneFeel {
+    visibility: hidden;
+}
+.candycane:hover #candycaneFeel {
+    visibility: visible;
+    position: relative;
+    bottom:-40px;
+}
+#offCanvasBottom1 {
+    background: white;
+}
+/*form*/
 
-		 form {
-		  clear:both;
-		  position: relative;
-		  display: inline-block;
-		  max-width: 500px;
-		  min-width: 500px;
-		  height: 350px;
-		  box-sizing: border-box;
-		  padding: 30px 20px;
-		  background-color: white;
-		  border-radius: 40px;
-		  margin: 40px 20px;
-		  font-family: "Helvetica" , sans-serif;
-		  font-weight: light;
-		  -webkit-font-smoothing: antialiased;
-	}
-	
-Form:hover{
-		box-shadow: inset 0 0 0 7px #DEDEDE;
-	}
-	
-#inputText{ 
-	      /*@extend .transition*/
-	      appearance: none;
-	      background-color: none;
-	      border: 1px solid #FF4136;
-	      line-height: 0;
-	      font-size: 40px;
-	      width: 100%;
-	      /*display: block;*/
-	      box-sizing: border-box;
-	      padding: 15px 15px;
-	      border-radius: 60px;
-	      color: white;
-	      font-weight: 100;
-	      letter-spacing: 0.01em;
-	      position: relative;
-	      top:60px;
-	      z-index: 1;
-	
-	  }
-	#inputText:hover{
-	 	/*translate( 0 , -35px );*/
-	 	font-style: italic;
-	    color: white;
-	    font-family: "Georgia";
-	} 
-	
-	#inputText:focus { 
-	        outline: none;
-	        background: salmon;
-	        color: white;
-	        margin-top: 30px;
-	        margin: 40px 20px;
-	    }
-	
-	.question{
-	
-	    position: relative;
-	    padding: 10px 0;
-	}
-	
-	
-	label{
-	   /*   @extend .transition*/
-	      /*transform-origin: left center;*/
-	      color: #FF4136;
-	      font-weight: 100;
-	      letter-spacing: 0.01em;
-	      font-size: 20px;
-	      box-sizing: border-box;
-	      padding: 10px 15px;
-	      display: block;
-	      position: absolute;
-	      top: 190px;
-	      margin-top: -80px;
-	      z-index: 1;
-	      pointer-events: none;
-	}
-	
-	label:focus{
-		z-index: -1;
-	}
-	
-	button {
-	   /* @extend .transition*/
-	    margin-top: 20px;
-	    background-color: #FF4136;
-	    border: 1px solid #FF4136;
-	    line-height: 0;
-	    display: inline-block;
-	    box-sizing: border-box;
-	    padding: 20px 15px ;
-/*	    border-radius: 60px;*/
-	    color: white;
-	    font-weight: 100;
-	    letter-spacing: 0.4em;
-	    position: relative;
-	    top:20px;
-	    z-index: 1;
-		font-size: 16px;
-		font-weight: bold;
-		
-	
-	}
-	
-	 button:hover  {
-			color: white;
-	      	background-color: salmon;
-	      	border: 2px solid white;
-	   
-	}  
-	      
-	 button #getColorButton:focus{
-			color: white;
-	      	background-color: #FF4136;
-	}
-
-	#backTop {
-		background: white
-		color: #666;
-		margin-top: 10px;
-	}
-	
-	#yearButton {
-		clear: both;
-		text-align: center;
-		line-height: 0px;
-		visibility: visible;
-		float:left;
-		background: white;
-		color: #FF4136 ;
-		letter-spacing: .5em;
-		margin-top:2px;
-		border-style: none;
-	
-	}
-	
-	 #yearButton:hover  {
-			color: white;
-	      	background-color: salmon;
-	      	border: 2px solid white;
-	   
-	} 
+form {
+    clear:both;
+    position: relative;
+    display: inline-block;
+    max-width: 500px;
+    min-width: 500px;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 40px;
+    margin: 40px 20px;
+    font-family: "Helvetica",
+    sans-serif;
+    font-weight: light;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    border: 6px solid #3e2b14;
+    padding: 10px;
+}
+Form:hover {
+    box-shadow: inset 0 0 0 7px #DEDEDE;
+}
+#inputText {
+    /*@extend .transition*/
+    
+    appearance: none;
+    background-color: none;
+    border: 1px solid #FF4136;
+    line-height: 0;
+    font-size: 40px;
+    width: 100%;
+    /*display: block;*/
+    
+    box-sizing: border-box;
+    padding: 15px 15px;
+    border-radius: 60px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    position: relative;
+    top:60px;
+    z-index: 1;
+}
+#inputText:hover {
+    /*translate( 0 , -35px );*/
+    
+    font-style: italic;
+    color: white;
+    font-family: "Georgia";
+}
+#inputText:focus {
+    outline: none;
+    background: salmon;
+    color: white;
+    margin-top: 30px;
+    margin: 40px 20px;
+}
+#yourTextColor {
+    border-radius: 20%;
+    height: 3%;
+    width:3% background:white;
+}
+.question {
+    position: relative;
+    padding: 10px 0;
+}
+label {
+    /*   @extend .transition*/
+    /*transform-origin: left center;*/
+    
+    color: #FF4136;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    display: block;
+    position: absolute;
+    top: 190px;
+    margin-top: -80px;
+    z-index: 1;
+    pointer-events: none;
+}
+label:focus {
+    z-index: -1;
+}
+button {
+    /* @extend .transition*/
+    
+    margin-top: 20px;
+    background-color: #FF4136;
+    border: 1px solid #FF4136;
+    line-height: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px 15px;
+    /*	    border-radius: 60px;*/
+    
+    color: white;
+    font-weight: 100;
+    letter-spacing: 0.4em;
+    position: relative;
+    top:20px;
+    z-index: 1;
+    font-size: 16px;
+    font-weight: bold;
+}
+button:hover {
+    color: white;
+    background-color: salmon;
+    border: 2px solid white;
+}
+button #getColorButton:focus {
+    color: white;
+    background-color: #FF4136;
+}
+#backTop {
+    background: white color: #666;
+    margin-top: 10px;
+}
+#yearButton {
+    clear: both;
+    text-align: center;
+    line-height: 0px;
+    visibility: visible;
+    float:left;
+    background: white;
+    color: #FF4136;
+    letter-spacing: .5em;
+    margin-top:2px;
+    border-style: none;
+}
+#yearButton:hover {
+    color: white;
+    background-color: salmon;
+    border: 2px solid white;
+}
 /*ALMOST WORKS HERE HERE */
 /*#yearButton:hover */
 /*.off-canvas-wrapper .position-bottom {
@@ -596,114 +597,120 @@ Form:hover{
 	.off-canvas-wrap,.inner-wrap{
     height:100%;   
 }*/
-	
-	/* YEAR IN COLOR CALENDAR*/
-	 ul {list-style-type: none;
-	box-sizing:border-box;}
-	 
-	.yearHeader {
-	    padding: 0px ;
-	    width: 100%;
-	    background: white;
-	    color: black;
-	}
-	
-	.yearHeader ul {
-	    margin: 0;
-	    padding: 0;
-	}
-	
-	.yearHeader ul li {
-	    color: black;
-	    font-size: 20px;
-	    text-transform: uppercase;
-	    letter-spacing: 3px;
-	    box-sizing:border-box;
-	}
-	
-	.yearHeader .prev {
-	    float: left;
-	    padding-top: 10px;
-	}
-	
-	.yearHeader .next {
-	    float: right;
-	    padding-top: 10px;
-	}
-	
-	.dekCalendar {
+/* YEAR IN COLOR CALENDAR*/
+
+ul {
+    list-style-type: none;
+    box-sizing:border-box;
+}
+.yearHeader {
+    padding: 0px;
+    width: 100%;
+    background: white;
+}
+.yearHeader ul {
+    margin: 0;
+    padding: 0;
+}
+.yearHeader ul li {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    box-sizing:border-box;
+}
+.yearHeader .prev {
+    float: left;
+    padding-top: 10px;
+    color: #FF4136;
+}
+.yearHeader .next {
+    float: right;
+    padding-top: 10px;
+    color: #FF4136;
+}
+/*	.dekCalendar {
 	    margin: 0;
 	    padding: 10px 0;
 	    background-color: black;
+	    background-color: navajowhite;
 	    box-sizing:border-box;
 	    color: white;
 	    font-family: sans-serif;
-	}
-	
-	.dekCalendar li {
-	    display: inline-block;
-	    box-sizing:border-box;
-	    width: 13.6%;
-	    color: white;
-	    text-align: center;
-	    font-family: sans-serif;
-	    
-	}
-	
-	.days {
-	    padding: 10px;
-	    background:#FF4136;
-	    margin: 0;
-	    font-family: sans-serif;
-	}
-	
-	.days li {
-	    list-style-type: none;
-	    display: inline-block;
-	    box-sizing:border-box;
-	    width: 40px;
-	   	height: 40px;
-	    text-align: center;
-	    margin-bottom: .5px;
-	    font-size:12px;
-	    color: white;
-	    border:1px white solid;
 	   
-	}
-	
-	.days li .monthy {
-		list-style-type: none;
-	    display: inline-block;
-	    background: white;
-	    color: black;
-	    font-size:15px;
-	    font-weight: bold;
-	    font-family: sans-serif;
-	    margin-bottom: .5px;
-	    text-align: center;
-	    width: 40px;
-	   	height: 40px;
-	}
-	
-	#yearInColorHead {
-		font-family: 'Syncopate', sans-serif;
-		font-weight: bold;
-		font-size: 30px;
-		color: #666;
-	
-	}
-	
-	/* Add media queries for smaller screens */
-	@media screen and (max-width:720px) {
-	    .weekdays li, .days li {width: 13.1%;}
-	}
-	
-	@media screen and (max-width: 420px) {
-	    .weekdays li, .days li {width: 12.5%;}
-	    .days li .active {padding: 2px;}
-	}
-	
-	@media screen and (max-width: 290px) {
-	    .weekdays li, .days li {width: 12.2%;}
-	}
+	}*/
 
+.dekCalendar li {
+    display: inline-block;
+    box-sizing:border-box;
+    width: 13.6%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+.days {
+    padding: 10px;
+    background:#FF4136;
+    margin: 0;
+    font-family: sans-serif;
+}
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    box-sizing:border-box;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: .5px;
+    font-size:12px;
+    color: white;
+    border:1px white solid;
+    border-radius:20%;
+}
+.days li .monthy {
+    list-style-type: none;
+    display: inline-block;
+    background: white;
+    color: black;
+    color: #FF4136;
+    font-size:15px;
+    font-weight: bold;
+    font-family: 'Syncopate',
+    sans-serif;
+    margin-bottom: .5px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius:18%;
+}
+#yearInColorHead {
+    font-family: 'Syncopate',
+    sans-serif;
+    /*		font-weight: bold;*/
+    
+    font-size: 30px;
+    color: #FF4136;
+}
+/* Add media queries for smaller screens */
+
+@media screen and (max-width: 720px) {
+    .weekdays li,
+    .days li {
+        width: 13.1%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .weekdays li,
+    .days li {
+        width: 12.5%;
+    }
+    .days li .active {
+        padding: 2px;
+    }
+}
+@media screen and (max-width: 290px) {
+    .weekdays li,
+    .days li {
+        width: 12.2%;
+    }
+}
