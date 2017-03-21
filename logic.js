@@ -126,12 +126,12 @@
 
       database.ref().on("child_added", function(childSnapshot) {
 
-			console.log("IMAGE NAME FROM FIREBASE: " + childSnapshot.val().data);
-			console.log("DATE ADDED FROM FIREBASE: " + childSnapshot.val().dateAdded);
+      console.log("IMAGE NAME FROM FIREBASE: " + childSnapshot.val().data);
+      console.log("DATE ADDED FROM FIREBASE: " + childSnapshot.val().dateAdded);
 
-		}, function(errorObject) {
-			  console.log("The read failed: " + errorObject.code);
-		});
+    }, function(errorObject) {
+        console.log("The read failed: " + errorObject.code);
+    });
     } else {
       clearphoto();
     }
@@ -139,83 +139,77 @@
   window.addEventListener('load', startup, false);
 })();
 
-//var apiKey = "d61456e8e8d5431f93770f341510b17a";
-//var apiKey2 = "86d5089bf82d4207a37e80b0bd024c5f";
+
+
+
+//$("#signUp").on("click", function(event) {
+
+ // var newUserName = $("#newUser").val();
+
+  //  database.ref('users').once('value', function(snapshot) {
+   //   if (snapshot.hasChild(newUserName)) {
+    //    console.log("Username already exists. Please choose another username.");
+    //  }
+    //  else {
+    //    database.ref('users/' + newUserName).push({
+    //      newUserName
+    //    });
+    //  }
+    //});
+//database.ref().startAt(null, "jacob").endAt(null, "jacob").on("value", function(snapshot) {
+
+        //  if (snapshot.val() === null) {
+            // username not taken
+        //  } else {
+            // username taken
+        //  }  
+
+      //}
+//});
+
+
+
+//$("#signIn").on("click", function(event) {
+
+//  var currentUserName = $("#currentUser").val();
+//})
+
+$("#signUp").on("click", function(event) {
+
+    var username = $("#username").val();
+    var password = $("#password").val();
+
+    firebase.auth().createUserWithEmailAndPassword(username, password).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+
+    });
+
+})
+
+$("#signIn").on("click", function(event) {
+
+      firebase.auth().signInWithEmailAndPassword(username, password).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+
+    });
+})
 
 function getEmotion() {
-	$(function() {
-		var params = { 
-		};
-		$.ajax({
-		url: "https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize?" + $.param(params),
-		    beforeSend: function(xhrObj){
-		        // Request headers
-		        xhrObj.setRequestHeader("Content-Type","application/octet-stream");
-		        xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","d61456e8e8d5431f93770f341510b17a");
-		    },
-		        type: "POST",
-		        // Request body
-		        data: data
-		})
-		.done(function(data) {
-		    console.log("Emotion API: success");
-		    console.log(data);
-		})
-		.fail(function(error) {
-		    console.log("Emotion API: error");
-		    console.log(error);
 
-		    var xhr = new XMLHttpRequest();
-			xhr.open('BODY', data, true);
-			xhr.onreadystatechange = function(){
-			  if ( xhr.readyState == 4 ) {
-			    if ( xhr.status == 200 ) {
-			      console.log('IMAGE SIZE (in bytes): ' + xhr.getResponseHeader('Content-Length'));
-			      console.log('IMAGE CONTENT TYPE: ' + xhr.getResponseHeader('Content-Type'));
-			      console.log('IMAGE CONTENT DISPOSITION: ' + xhr.getResponseHeader('Content-Disposition'));
-			    } else {
-			      console.log('IMAGE SIZE: error');
-			    }
- 			  }
-			};
-			xhr.send(null);
-		});
-	});
+  var input = {
+    "image": data,
+    "numResults": 7
+  };
+
+  Algorithmia.client("simeYEZ7zXEZjGi27B+AwrRVLjo1")
+             .algo("algo://deeplearning/EmotionRecognitionCNNMBP/0.1.2")
+             .pipe(input)
+             .then(function(output) {
+               console.log(output);
+             });
+
 }
-
-//imgur
-//Authorization: Client-ID YOUR_CLIENT_ID
-//client id: 56a00a2b39ebf9a
-//client secret: 126548ec734680dff937ff16a35908205116ffee
-//base url: https://api.imgur.com/3/
-
-//returns specific image with id
-//image url: https://api.imgur.com/3/account/{username}/image/{id}
-
-//returns an array of ids associated with the account
-//id url: https://api.imgur.com/3/account/{username}/images/ids/{page}
-
-  function imgurUpload(token) {
-
-  	var clientID: 56a00a2b39ebf9a;
-    var auth;
-    if (token) auth = 'kfuetterer ' + token;
-    else auth = 'Client-ID ' + clientId;
-
-    $.ajax({
-      url: 'https://api.imgur.com/3/image',
-      type: 'POST',
-      headers: {
-        Authorization: auth,
-        Accept: 'application/json'
-      },
-      data: {
-        image: localStorage.dataBase64,
-        type: 'base64'
-      },
-      success: function(result) {
-        var id = result.data.id;
-        window.location = 'https://imgur.com/gallery/' + id;
-      }
-    });
-  }
