@@ -1,2 +1,4 @@
 # How-You-Doing
-A colorized photo diary
+An awesome colorized photo diary
+
+
