@@ -40,6 +40,10 @@ body {
     font-family: 'Syncopate', sans-serif;
     font-weight: bold;
     font-size: 90px;
+    -webkit-animation:bounce-top 0.9s both;
+    -moz-animation:bounce-top 0.9s both;
+    animation:bounce-top 0.9s both;
+
 }
 #feelSpectrumText {
     letter-spacing: 1em;
@@ -89,6 +93,9 @@ body {
 #keepButton {
     /*	float:left;*/
 }
+#keepButton:hover{
+	background:pink;
+}
 #deleteButton {
     /*float:left;*/
 }
@@ -104,13 +111,13 @@ body {
     font-family: 'Comfortaa', cursive;
     line-height: 13px;
     padding: 20px;
-    height: 350px;
-    width: 250px;
+    height: 240px;
+    width: 320px;
     color: #FF4136;
     margin-bottom: 2px;
     margin-top: 20px;
     background: white;
-    border-radius: 60%;
+/*     border-radius: 60%; */
     text-align: right;
     border: 20px solid lightgreen;
     padding: 10px;
