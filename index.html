@@ -1,43 +1,4 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>How You Doin'</title>
-	<meta charset='utf-8'>
-	<script src='jquery.fileupload.js' type='text/javascript'></script>
-	<script src='jquery.cloudinary.js' type='text/javascript'></script>
-	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
-	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.0.js" integrity="sha256-wPFJNIFlVY49B+CuAIrDr932XSb6Jk3J1M22M3E2ylQ=" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="main.css" type="text/css" media="all">
-	<script src="algorithmia.js"></script>
-	<script src="logic.js"></script>
-</head>
-<body>
-
-	<h1>How You Doin'</h1>
-
-	<input id="username">
-	<input id="password">
-	<button id="signUp">Sign Up</button>
-	<button id="signIn">Sign In</button>
-
-	<div class="contentarea">
-	  	<div class="camera">
-	    	<video id="video">Video stream not available.</video>
-	    	<button id="startbutton">Take photo</button> 
-	  	</div>
-	  	<canvas id="canvas"></canvas>
-	  	<div class="output">
-	    	<img id="photo" alt="The screen capture will appear in this box.">
-	    	<!--<a  class="post" href="https://api.imgur.com/oauth2/authorize?response_type=token&client_id=1e9d0bad8e66dcb"></a>-->
-	  	</div>
-	</div>
-
-	<button onclick="getEmotion()">Get Emotion</button>
-
-</body>
-=======
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
@@ -139,11 +100,17 @@
             <!-- START icon row -->
             <div class="row" data-equalizer data-equalizer-mq="large-up">
                 <div id="selfieTarget" class="medium-5 columns panel icons page-scroll" data-equalizer-watch>
-                                        <div id="selfieCapture">
+                    <div id="selfieCapture">
+                         <div class="camera">
+                            <video id="video">Video stream not available.</video>
+                                <button id="startbutton">Take photo</button> 
+                    </div>
+         
+                        <!-- camera icon from font awesome -->
+                        <a class="btn" href="#"><i id="smCamera" class="fa fa-camera-retro fa-5x"><span style="font-size:18px">Click to take selfie</span></i></a>
                         <!-- <div class="question"> -->
                         <!-- <p id="giveText">+ get your color</p> -->
                         <!-- camera icon from font awesome -->
-                        <i id="smCamera" class="fa fa-camera-retro fa-5x"></i>
                         <!--paragraph text: smile -->
                         <p id="selfieInvite">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sm<span style="color:skyblue">i</span>le :)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                         <!-- <input id="inputText" type="textarea" maxlength="250" required=""> -->
@@ -199,7 +166,11 @@
                         <br>
 
                         <div class="small-7 small-centered text-center columns">
-                            <!-- button to KEEP your selfie  -->
+                           <canvas id="canvas"></canvas>
+                             <div class="output">
+                                
+            <!--<a  class="post" href="https://api.imgur.com/oauth2/authorize?response_type=token&client_id=1e9d0bad8e66dcb"></a>-->
+                        </div>
                             
                             
                         </div>
@@ -766,6 +737,10 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="algorithmia.js"></script>
+    <script src="logic.js"></script>
 
     <!-- copyright
     © 2017 SpotlessFlies -->
