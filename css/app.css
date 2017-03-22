@@ -85,22 +85,57 @@ body {
     text-align: right;
 }
 #selfieColorButton {
-    line-height: 18px;
+    /* line-height: 18px; */
+    border: .1px solid white;
+/*     margin-top: 20px;
+background-color: #FF4136;
+border: 1px solid #FF4136;
+line-height: 0;
+display: inline-block;
+box-sizing: border-box;
+padding: 20px 15px;
+border-radius: 60px;
+color: white;
+font-weight: 100;
+letter-spacing: 0.4em;
+position: relative;
+top:20px;
+z-index: 1;
+font-size: 18px;
+font-weight: bold; */
 }
-#selfieColorButton:hover #selfieFrame {
+/* #selfieColorButton:hover #selfieFrame {
     color:black;
+} */
+
+#smCameraButton{
+margin-left: 5px;
+margin-top: -10px;
+
 }
+
+#takeSelfieText {
+	font-family: 'Syncopate', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FF4136;
+}
+
+
 #keepButton {
     /*	float:left;*/
+    border: .1px solid white;
 }
 #keepButton:hover{
 	background:pink;
 }
 #deleteButton {
     /*float:left;*/
+    border: .1px solid white;
 }
 #storeTxtButton {
     /*float:left;*/
+    border: .1px solid white;
 }
 #selfieFrame {
     font-size: 20px;
@@ -219,6 +254,11 @@ body {
 }
 #smCamera {
     color: black;
+    text-align: right;
+}
+
+#smCamera:hover {
+	color: navajowhite;
     text-align: right;
 }
 /*#cameraFeel{
@@ -485,8 +525,6 @@ Form:hover {
     line-height: 0;
     font-size: 40px;
     width: 100%;
-    /*display: block;*/
-    
     box-sizing: border-box;
     padding: 15px 15px;
     border-radius: 60px;
@@ -497,19 +535,30 @@ Form:hover {
     top:60px;
     z-index: 1;
 }
+
+input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 3;
+    color:white;
+    text-align: center;
+}
+
 #inputText:hover {
-    /*translate( 0 , -35px );*/
-    
-    font-style: italic;
+    outline: none;
+    background: salmon;
     color: white;
+/*     margin-top: 30px;
+margin: 40px 20px; */
     font-family: "Georgia";
 }
 #inputText:focus {
     outline: none;
     background: salmon;
     color: white;
-    margin-top: 30px;
-    margin: 40px 20px;
+/*     margin-top: 30px;
+margin: 40px 20px; */
+    font-style: italic;
+    font-family: "Georgia";
 }
 #yourTextColor {
     border-radius: 20%;
@@ -520,14 +569,14 @@ Form:hover {
     position: relative;
     padding: 10px 0;
 }
-label {
-    /*   @extend .transition*/
-    /*transform-origin: left center;*/
+/* label {
+    @extend .transition
+    transform-origin: left center;
     
     color: #FF4136;
     font-weight: 100;
     letter-spacing: 0.01em;
-    font-size: 20px;
+    font-size: 15px;
     box-sizing: border-box;
     padding: 10px 15px;
     display: block;
@@ -539,7 +588,7 @@ label {
 }
 label:focus {
     z-index: -1;
-}
+} */
 button {
     /* @extend .transition*/
     
@@ -551,14 +600,13 @@ button {
     box-sizing: border-box;
     padding: 20px 15px;
     /*	    border-radius: 60px;*/
-    
     color: white;
     font-weight: 100;
     letter-spacing: 0.4em;
     position: relative;
     top:20px;
     z-index: 1;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 button:hover {
@@ -584,12 +632,12 @@ button #getColorButton:focus {
     color: #FF4136;
     letter-spacing: .5em;
     margin-top:2px;
-    border-style: none;
+    border: .5px solid #666;
 }
 #yearButton:hover {
     color: white;
     background-color: salmon;
-    border: 2px solid white;
+    border: .5px solid #FF4136;
 }
 /*ALMOST WORKS HERE HERE */
 /*#yearButton:hover */
