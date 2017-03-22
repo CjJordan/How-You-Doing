@@ -117,7 +117,6 @@
     
       data = canvas.toDataURL('image/png');
       console.log(data);
-      photo.setAttribute('src', data);
 
       database.ref().push({
         data: data,
