@@ -1,6 +1,6 @@
 /*countLi()*/
 $("#storeTxtButton").click(function(){
-	alert("howrya");
+/*	alert("howrya");*/
 /*$(".days").append("<li>" + "working?" + "</li>");
 */
 
