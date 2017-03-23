@@ -15,6 +15,7 @@
 }
 */
 
+
 .off-canvas-content {
     overflow: hidden;
 }
@@ -37,13 +38,28 @@ body {
     display: none;
 }
 .callout H1 {
-    font-family: 'Syncopate', sans-serif;
-    font-weight: bold;
-    font-size: 90px;
+ /*    font-family: 'Jura', sans-serif;
+     font-family: 'Passion One', cursive;
+     font-family: 'Comfortaa', cursive;    
+ font-family: 'Syncopate', sans-serif;
+ font-family: 'Gloria Hallelujah', cursive;
+     font-family: 'Architects Daughter', cursive;
+     font-family: 'Fascinate Inline', cursive; */
+            font-family: 'Lobster', cursive;
+                line-height: 180px;
+
+/*     font-weight: bold; */
+    font-size: 150px;
     -webkit-animation:bounce-top 0.9s both;
     -moz-animation:bounce-top 0.9s both;
     animation:bounce-top 0.9s both;
+}
 
+.callout H4 {
+    font-family: 'Lobster', cursive;
+        font-family: 'Syncopate', sans-serif;
+    letter-spacing: .05em;
+    line-height: 3px;
 }
 #feelSpectrumText {
     letter-spacing: 1em;
@@ -56,7 +72,7 @@ body {
 	}*/
 
 #talkInvite {
-    font-size: 45px;
+    font-size: 40px;
     font-family: 'Gloria Hallelujah', cursive;
     font-family: 'Architects Daughter', cursive;
     font-family: 'Jura', sans-serif;
@@ -71,10 +87,6 @@ body {
 }
 #selfieInvite {
     font-size: 60px;
-    font-family: 'Gloria Hallelujah', cursive;
-    font-family: 'Architects Daughter', cursive;
-    font-family: 'Jura', sans-serif;
-    font-family: 'Passion One', cursive;
     font-family: 'Comfortaa', cursive;
     line-height: 3px;
     color: #FF4136;
@@ -84,30 +96,47 @@ body {
     border-radius: 40%;
     text-align: right;
 }
-#selfieColorButton {
-    line-height: 18px;
-}
-#selfieColorButton:hover #selfieFrame {
+
+/* #selfieColorButton:hover #selfieFrame {
     color:black;
+} */
+
+#smCameraButton{
+margin-left: 5px;
+margin-top: -10px;
+
 }
+
+#takeSelfieText {
+	font-family: 'Syncopate', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FF4136;
+}
+
+
 #keepButton {
     /*	float:left;*/
+    border: .1px solid white;
 }
-#keepButton:hover{
-	background:pink;
-}
+
 #deleteButton {
     /*float:left;*/
+    border: .1px solid white;
 }
 #storeTxtButton {
     /*float:left;*/
+    border: .1px solid white;
+}
+
+#selfieColorButton {
+
+    border: .1px solid white;
+    margin:0px;
+
 }
 #selfieFrame {
     font-size: 20px;
-    font-family: 'Gloria Hallelujah', cursive;
-    font-family: 'Architects Daughter', cursive;
-    font-family: 'Jura', sans-serif;
-    font-family: 'Passion One', cursive;
     font-family: 'Comfortaa', cursive;
     line-height: 13px;
     padding: 20px;
@@ -117,12 +146,12 @@ body {
     margin-bottom: 2px;
     margin-top: 20px;
     background: white;
-/*     border-radius: 60%; */
+ border-radius: 10%;  
     text-align: right;
-    border: 20px solid lightgreen;
+    border: 20px solid navajowhite;
     padding: 10px;
 }
-}
+
 /*#giveText{
 		font-size: 30px;
 		color:#FF4136;
@@ -165,9 +194,8 @@ body {
     box-sizing: border-box;
     padding: 20px 15px;
     /*	    border-radius: 60px;*/
-    
     color: white;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.01em;
     position: relative;
     top: 20px;
     z-index: 1;
@@ -183,12 +211,14 @@ body {
     color: lightgreen;
 }
 .box {
-    float: left;
+    float: right;
     width: 35px;
     height: 35px;
-    margin: 5px;
-    border: 5px solid white;
+    margin: 10px;
+    border: 7px solid white;
     align-items: right;
+    border-radius: 15%;
+
 }
 .box:hover {
     border-radius: 40%;
@@ -200,11 +230,15 @@ body {
     float: right;
     width: 40%;
     height: 40%;
-    margin-right: 50px;
+    margin-right: 10px;
     padding: 0px;
     border-style: none;
     color: white;
-    font-size: 400px;
+    font-size: 280px;
+/*     max-width: 400px;
+min-width: 100px;
+height: 400px;
+min-height: 100px; */
 }
 #cameraFeel:hover {
     float: center;
@@ -213,12 +247,21 @@ body {
     margin-right: 80px;
     padding: 0px;
     border-style: none;
-    font-size: 400px;
+    font-size: 280px;
     color: #13b4ff;
     color: navajowhite;
+/*     max-width: 400px;
+min-width: 100px;
+height: 400px;
+min-height: 100px; */
 }
 #smCamera {
     color: black;
+    text-align: right;
+}
+
+#smCamera:hover {
+	color: navajowhite;
     text-align: right;
 }
 /*#cameraFeel{
@@ -240,7 +283,11 @@ body {
     margin-right: 50px;
     padding: 0px;
     color: white;
-    font-size: 400px;
+    font-size: 280px;
+/*     max-width: 400px;
+min-width: 100px;
+height: 400px;
+min-height: 100px; */
 }
 #pencilFeel:hover {
     float: center;
@@ -249,89 +296,57 @@ body {
     margin-right: 80px;
     padding: 0px;
     border-style: none;
-    font-size: 400px;
+    font-size: 280px;
     color: #62FA44;
     color: navajowhite;
+/*     max-width: 400px;
+min-width: 100px;
+height: 400px;
+min-height: 100px; */
 }
 #textCamera {
     font-size: 30px;
     color: white;
     padding-left: none;
-    text-align: center;
+    text-align: left;
     font-family: 'Syncopate', sans-serif;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 #textPencil {
     font-size: 30px;
     color: white;
     padding-left: none;
-    text-align: center;
+    text-align: left;
     font-family: 'Syncopate', sans-serif;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 #selfieCapture {
     clear: both;
     position: relative;
-    display: inline-block;
-    max-width: 500px;
-    min-width: 500px;
+/*     display: inline-block; */
+    max-width: 600px;
+    min-width: 300px;
     height: 400px;
+    min-height: 300px;
     box-sizing: border-box;
-    padding: 30px 20px;
+    padding: 30px 10px;
     background-color: white;
     border-radius: 40px;
-    margin: 40px 20px;
+    margin: 20px 1px;
     font-family: "Helvetica", sans-serif;
     border: 7px solid #3e2b14;
-    padding: 10px;
+   
 }
-/*	margin-top: 0;
-	padding: none;
 
-  white-space: nowrap;
-  position: relative;
-
-  left: -60px;
-  transform: rotate(270deg);*/
-}
-.icons {
-    border: .1px solid white;
+/* .icons {
     border-radius: 40px;
     padding: 10px 40px;
-}
-}
-/*.singleBracket {
-		font-size: 300px;
-		/*margin: 5px;*/
-/*transform: rotate(-90deg);
-		visibility: visible;
-		color: black;
-	/*	z-index: 1;*/
-/*}*/
-/*.bracket /*.singleBracket*/
-/*.button*/
-/*#yearButton {
-		visibility: hidden;
-	
-	}*/
-/*.bracket*/
-/*.singleBracket*/
-/*:hover .button #yearButton{
-		
-		visibility: visible;  */
-/*margin: 5px;*/
-/*transform: rotate(-90deg);*/
-}
-/*1.	anxious
-	2.	bored
-	3.	thoughtful
-	4.	happy
-	5.	lonely
-	6.	confident
-	7.	cold
-	8.	disappointed
-	9.	exhausted
-	10.	satisfied*/
+max-width: 500px;
+min-width: 300px;
+height: 400px;
+min-height: 300px;
+} */
+
 
 .feel {
     color:white;
@@ -458,8 +473,9 @@ form {
     position: relative;
     display: inline-block;
     max-width: 500px;
-    min-width: 500px;
-    height: 350px;
+    min-width: 300px;
+    height: 400px;
+    min-height:300px; 
     box-sizing: border-box;
     padding: 30px 20px;
     background-color: white;
@@ -477,16 +493,12 @@ Form:hover {
     box-shadow: inset 0 0 0 7px #DEDEDE;
 }
 #inputText {
-    /*@extend .transition*/
-    
     appearance: none;
     background-color: none;
     border: 1px solid #FF4136;
     line-height: 0;
     font-size: 40px;
     width: 100%;
-    /*display: block;*/
-    
     box-sizing: border-box;
     padding: 15px 15px;
     border-radius: 60px;
@@ -497,19 +509,30 @@ Form:hover {
     top:60px;
     z-index: 1;
 }
+
+input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 3;
+    color:white;
+    text-align: center;
+}
+
 #inputText:hover {
-    /*translate( 0 , -35px );*/
-    
-    font-style: italic;
+    outline: none;
+    background: salmon;
     color: white;
+/*     margin-top: 30px;
+margin: 40px 20px; */
     font-family: "Georgia";
 }
 #inputText:focus {
     outline: none;
     background: salmon;
     color: white;
-    margin-top: 30px;
-    margin: 40px 20px;
+/*     margin-top: 30px;
+margin: 40px 20px; */
+    font-style: italic;
+    font-family: "Georgia";
 }
 #yourTextColor {
     border-radius: 20%;
@@ -520,14 +543,14 @@ Form:hover {
     position: relative;
     padding: 10px 0;
 }
-label {
-    /*   @extend .transition*/
-    /*transform-origin: left center;*/
+/* label {
+    @extend .transition
+    transform-origin: left center;
     
     color: #FF4136;
     font-weight: 100;
     letter-spacing: 0.01em;
-    font-size: 20px;
+    font-size: 15px;
     box-sizing: border-box;
     padding: 10px 15px;
     display: block;
@@ -539,7 +562,7 @@ label {
 }
 label:focus {
     z-index: -1;
-}
+} */
 button {
     /* @extend .transition*/
     
@@ -551,14 +574,13 @@ button {
     box-sizing: border-box;
     padding: 20px 15px;
     /*	    border-radius: 60px;*/
-    
     color: white;
     font-weight: 100;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.1em;
     position: relative;
     top:20px;
     z-index: 1;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 button:hover {
@@ -582,14 +604,16 @@ button #getColorButton:focus {
     float:left;
     background: white;
     color: #FF4136;
-    letter-spacing: .5em;
+    letter-spacing: none;
     margin-top:2px;
-    border-style: none;
+    border: .5px solid #666;
+    font-family: 'Nova Mono', monospace;
+    font-family: 'Space Mono', monospace;
 }
 #yearButton:hover {
     color: white;
     background-color: salmon;
-    border: 2px solid white;
+    border: .5px solid #FF4136;
 }
 /*ALMOST WORKS HERE HERE */
 /*#yearButton:hover */
@@ -673,7 +697,25 @@ ul {
     color: white;
     border:1px white solid;
     border-radius:20%;
+
 }
+#boxesHere li{
+    list-style-type: none;
+    display: inline-block;
+    box-sizing:border-box;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: .5px;
+    margin-top: .5px;
+    font-size:12px;
+    background: #FF4136;
+    border:1px white solid;
+    border-radius:20%;
+    color:white;
+}
+
+
 .days li .monthy {
     list-style-type: none;
     display: inline-block;
@@ -690,23 +732,187 @@ ul {
     height: 40px;
     border-radius:18%;
 }
+
+li:hover {
+	    box-shadow: 1px 1px white, 2px 2px white, 3px 3px white;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    color:green;
+}
+
+li #jan1 {
+
+}
+
+li #jan1:hover {
+	color:yellow;
+	background: black;
+	
+}
+
 #yearInColorHead {
-    font-family: 'Syncopate',
-    sans-serif;
-    /*		font-weight: bold;*/
-    
+    font-family: 'Syncopate', sans-serif;
     font-size: 30px;
     color: #FF4136;
+    text-align: center;
 }
 /* Add media queries for smaller screens */
-
-@media screen and (max-width: 720px) {
+/* ---------------------------------------------------Lg---------- */
+@media screen and (max-width: 768px) {
     .weekdays li,
     .days li {
-        width: 13.1%;
-    }
+        width: 13.1%;     }
+
+.callout H1 {
+    font-family: 'Lobster', cursive;
+    font-size: 75px;
+    line-height: 100px;
+}    
+
+#pencilFeel {
+    float: right;
+    width: 40%;
+    height: 40%;
+    margin-right: 50px;
+    padding: 0px;
+    color: white;
+    font-size: 220px;
+
 }
-@media screen and (max-width: 420px) {
+
+#textPencil {
+    font-size: 18px;
+    color: white;
+    padding-left: none;
+    text-align: left;
+    font-family: 'Syncopate', sans-serif;
+    margin-top: 20px;
+}
+
+#cameraFeel {
+    float: right;
+    width: 40%;
+    height: 40%;
+    margin-right: 50px;
+    padding: 0px;
+    color: white;
+    font-size: 220px;
+}
+
+#textCamera {
+    font-size: 18px;
+    color: white;
+    padding-left: none;
+    text-align: left;
+    font-family: 'Syncopate', sans-serif;
+    margin-top: 20px;
+}
+#selfieFrame {
+    padding: 0px;
+    height: 170px;
+    width: 250px;
+    color: #FF4136;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    background: white;
+ border-radius: 10%;  
+    text-align: right;
+    border: 10px solid navajowhite;
+    padding: 0px;
+}
+
+#selfieCapture {
+    clear: both;
+    position: relative;
+/*     display: inline-block; */
+    height: 200px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 40px;
+    margin: 1px;
+    font-family: "Helvetica", sans-serif;
+    border: 7px solid #3e2b14;
+   
+}
+
+#selfieInvite {
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+    line-height: 3px;
+    color: #FF4136;
+    margin-bottom: 0px;
+    margin-top: -70px;
+    background: white;
+    border-radius: 40%;
+    text-align: right;
+}
+
+.small-12 {
+    padding:0px;
+}
+
+#storeTxtButton {
+    /*float:left;*/
+    font-size: 12px;
+    border: .1px solid white;
+            padding: 12px;
+}
+#selfieColorButton {
+    /* line-height: 18px; */
+/*     border: .1px solid white; */
+        font-size: 12px;
+        padding: 10px;
+}
+
+#keepButton {
+    /*  float:left;*/
+    border: .1px solid white;
+            font-size: 12px;
+        padding: 12px;
+}
+
+#deleteButton {
+    /*float:left;*/
+    border: .1px solid white;
+            font-size: 12px;
+        padding: 12px;
+}
+
+.medium-2 {
+    width: 10%;
+    padding: 0px;
+}
+
+#talkInvite {
+    font-size: 25px;
+   font-family: 'Comfortaa', cursive;
+    line-height: 3px;
+    color: #FF4136;
+    margin-bottom: 2px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 40%;
+}
+
+#inputText {
+    appearance: none;
+    background-color: none;
+    border: 1px solid #FF4136;
+    line-height: 0;
+    font-size: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    border-radius: 60px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    position: relative;
+    top:60px;
+    z-index: 1;
+}
+/* ---------------------------------------------------Md---------- */
+@media screen and (max-width: 480px) {
     .weekdays li,
     .days li {
         width: 12.5%;
@@ -714,10 +920,186 @@ ul {
     .days li .active {
         padding: 2px;
     }
+
+#textPencil {
+    font-size: 18px;
+    color: white;
+    padding-left: none;
+    text-align: left;
+    font-family: 'Syncopate', sans-serif;
+    margin-top: 20px;
+    margin-left:10px;
 }
-@media screen and (max-width: 290px) {
+#selfieCapture {
+    clear: both;
+    position: relative;
+/*     display: inline-block; */
+    height: 200px;
+    width: 450px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 40px;
+    margin: 1px;
+    font-family: "Helvetica", sans-serif;
+    border: 7px solid #3e2b14;
+   
+}
+
+#storeTxtButton {
+    /*float:left;*/
+    font-size: 22px;
+            padding: 12px;
+                float:center;
+                    line-height: 20px;
+                    border:none;
+}
+#selfieColorButton {
+    /* line-height: 18px; */
+/*     border: .1px solid white; */
+        font-size: 22px;
+    line-height: 20px;
+                    padding: 12px;
+                    border:none;
+    }
+#keepButton {
+    /*  float:left;*/
+    float:left;
+    line-height: 20px;
+            font-size: 22px;
+        padding: 12px;
+        border:none;
+}
+
+#deleteButton {
+            font-size: 22px;
+        padding: 12px;
+            float:left;
+                line-height: 20px;
+                border:none;
+}
+
+.small-12 {
+    padding:0px;
+    width: 100%;
+}
+button {
+    margin-top: 0px;
+    letter-spacing: .01em;
+
+}
+
+#selfieFrame {
+    padding: 20px;
+    height: 240px;
+    width: 75%;
+}
+
+
+}
+/* ---------------------------------------------------Sm---------- */
+@media screen and (max-width: 320px) {
     .weekdays li,
     .days li {
-        width: 12.2%;
-    }
+        width: 12.2%;}
+
+        .callout H4 {
+    font-size: 20px;
+    line-height: 25px;
+}    
+
+#pencilFeel {
+    float: right;
+    width: 40%;
+    height: 40%;
+    margin-right: 50px;
+    padding: 0px;
+    color: white;
+    font-size: 180px;
+
+}
+
+#cameraFeel {
+    float: right;
+    width: 40%;
+    height: 40%;
+    margin-right: 50px;
+    padding: 0px;
+    color: white;
+    font-size: 180px;
+}
+
+#selfieFrame {
+    padding: 0px;
+    height: 170px;
+    width: 1800px;
+    color: #FF4136;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    background: white;
+ border-radius: 10%;  
+    text-align: right;
+    border: 10px solid navajowhite;
+    padding: 0px;
+}
+
+#selfieCapture {
+    clear: both;
+    position: relative;
+/*     display: inline-block; */
+    width: 175px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 40px;
+    margin: 1px;
+    font-family: "Helvetica", sans-serif;
+    border: 7px solid #3e2b14;
+   
+}
+
+#selfieFrame {
+   padding: 20px;
+    height: 240px;
+    width: 75%;
+    color: #FF4136;
+    margin-bottom: 2px;
+    margin-top: 20px;
+    background: white;
+ border-radius: 10%;  
+    text-align: right;
+    border: 20px solid navajowhite;
+    padding: 10px;
+}
+
+form {
+    clear:both;
+    position: relative;
+    display: inline-block;
+    max-width: 500px;
+    min-width: 300px;
+    height: 400px;
+    min-height:300px; 
+    box-sizing: border-box;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 40px;
+    margin-right: 70px;
+    font-family: "Helvetica",
+    sans-serif;
+    font-weight: light;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    border: 6px solid #3e2b14;
+    padding: 10px;
+}
+
+#pencilColor {
+    font-size: 200px;
+    float: right;
+    width: 40%;
+    height: 40%;
+    margin-right: 70px;
+    padding: 0px;
+    color: white;
+}
+
 }
