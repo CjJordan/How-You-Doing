@@ -16,8 +16,17 @@ var username;
 var scoreHappy;
 var count;
 var today = moment();
+var signedIn = false;
 
 window.onload = function() {
+
+	if (signedIn === true) {
+
+	}
+
+	if (signedIn === false) {
+		
+	}
 
   	$("#signUp").on("click", function(event) {
 
@@ -38,6 +47,7 @@ window.onload = function() {
         		var htmlDoesntExist = "<p>You are signed up!</p>";
         		document.querySelector("#exists").innerHTML = htmlDoesntExist;
         		console.log("user " + username + " does not exist!");
+        		signedIn = true;
       		}	
     	}
    
@@ -53,6 +63,7 @@ window.onload = function() {
 
   	$("#signIn").on("click", function(event) {
     	username = $("#username").val();
+    	signedIn = true;
   	})
 
 }
