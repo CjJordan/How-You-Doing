@@ -1,23 +1,27 @@
-
-  var config = {
+var config = {
     apiKey: "AIzaSyBw6KqKR6_y6mS5gSoADvwUelEVWXFHjmo",
     authDomain: "howyoudoing-f3f3f.firebaseapp.com",
     databaseURL: "https://howyoudoing-f3f3f.firebaseio.com",
     storageBucket: "howyoudoing-f3f3f.appspot.com",
     messagingSenderId: "737070940637"
   };
+
   firebase.initializeApp(config);
 
   var database = firebase.database();
 
   var data = "";
+  var username = "";
+  var scoreHappy;
+  var scoreSad;
+
 
 (function() {
   // The width and height of the captured photo. We will set the
   // width to the value defined here, but the height will be
   // calculated based on the aspect ratio of the input stream.
 
-  var width = 320;    // We will scale the photo width to this
+  var width = 600;    // We will scale the photo width to this
   var height = 0;     // This will be computed based on the input stream
 
   // |streaming| indicates whether or not we're currently streaming
@@ -99,7 +103,6 @@
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     data = canvas.toDataURL('image/png');
-    photo.setAttribute('src', data);
   }
   
   // Capture a photo by fetching the current contents of the video
@@ -116,19 +119,19 @@
       context.drawImage(video, 0, 0, width, height);
     
       data = canvas.toDataURL('image/png');
-      console.log(data);
+      getEmotion();
 
-      database.ref().push({
+      database.ref('users/' + username).push({
         data: data,
         dateAdded: firebase.database.ServerValue.TIMESTAMP
       });
 
       database.ref().on("child_added", function(childSnapshot) {
 
-      console.log("IMAGE NAME FROM FIREBASE: " + childSnapshot.val().data);
-      console.log("DATE ADDED FROM FIREBASE: " + childSnapshot.val().dateAdded);
+        console.log("IMAGE NAME FROM FIREBASE: " + childSnapshot.val().data);
+        console.log("DATE ADDED FROM FIREBASE: " + childSnapshot.val().dateAdded);
 
-    }, function(errorObject) {
+      }, function(errorObject) {
         console.log("The read failed: " + errorObject.code);
     });
     } else {
@@ -141,60 +144,37 @@
 
 
 
-//$("#signUp").on("click", function(event) {
-
- // var newUserName = $("#newUser").val();
-
-  //  database.ref('users').once('value', function(snapshot) {
-   //   if (snapshot.hasChild(newUserName)) {
-    //    console.log("Username already exists. Please choose another username.");
-    //  }
-    //  else {
-    //    database.ref('users/' + newUserName).push({
-    //      newUserName
-    //    });
-    //  }
-    //});
-//database.ref().startAt(null, "jacob").endAt(null, "jacob").on("value", function(snapshot) {
-
-        //  if (snapshot.val() === null) {
-            // username not taken
-        //  } else {
-            // username taken
-        //  }  
-
-      //}
-//});
-
-
-
-//$("#signIn").on("click", function(event) {
-
-//  var currentUserName = $("#currentUser").val();
-//})
-
 $("#signUp").on("click", function(event) {
 
-    var username = $("#username").val();
-    var password = $("#password").val();
+  username = $("#username").val();
 
-    firebase.auth().createUserWithEmailAndPassword(username, password).catch(function(error) {
-      // Handle Errors here.
-      var errorCode = error.code;
-      var errorMessage = error.message;
-
+    database.ref('users').once('value', function(snapshot) {
+      if (snapshot.hasChild(username)) {
+        console.log("Username already exists. Please choose another username.");
+      }
+      else {
+        database.ref('users/' + username).push({
+          username: username
+        });
+     }
     });
 
-})
+//database.ref().startAt(null, username).endAt(null, username).on("value", function(snapshot) {
+
+//          if (snapshot.val() === null) {
+//            console.log("Username not taken.");
+//         } else {
+//            console.log("Username taken.");
+//         }  
+
+//  });
+});
+
 
 $("#signIn").on("click", function(event) {
 
-      firebase.auth().signInWithEmailAndPassword(username, password).catch(function(error) {
-      // Handle Errors here.
-      var errorCode = error.code;
-      var errorMessage = error.message;
+  username = $("username").val();
 
-    });
 })
 
 function getEmotion() {
@@ -209,6 +189,26 @@ function getEmotion() {
              .pipe(input)
              .then(function(output) {
                console.log(output);
+               console.log(output.result.results);
+
+               var camScore;
+
+               for(var i = 0; i < output.result.results.length; i++) {
+                 var emotions = output.result.results[i][1];
+                 console.log(emotions);
+
+                 if(emotions === "Happy") {
+                  scoreHappy = output.result.results[i][0];
+                  scoreHappy = scoreHappy.toPrecision(2);               
+                  camScore = scoreHappy;
+                  var score = camScore;
+                    score = score.toString().replace(/^[0.]+/, "");
+                    score = parseInt(score).toPrecision(2)/100;
+                  console.log("camScore", score);
+                 }
+
+                }
+
              });
 
 }

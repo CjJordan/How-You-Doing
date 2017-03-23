@@ -2,7 +2,7 @@ $(document).ready(function(){
   console.log("cat");
 
 // creates click event when button for adding sentiment text is used
-$("#textInputBtn").on("click", function(event) {
+$("#getYourTextColor").on("click", function(event) {
   event.preventDefault();
   console.log("dog");
 
@@ -59,38 +59,41 @@ $("#textInputBtn").on("click", function(event) {
 
   //  takes textScore and uses it to create sentiment color ( 1 is happy and  0 is sad ) and posts it in correct box
         if (textScore <= 1.0 && textScore >= .90) {
-        $("#box1").text("").css("background", ("#FFA500"))
+        $("#box-1").text("").css("background", ("#FFA500"))
       }
         else if (textScore <= .89 && textScore >= .80) {
-        $("#box1").text("").css("background", ("#FFFF00"))
+        $("#box-1").text("").css("background", ("#FFFF00"))
       }
         else if (textScore <= .79 && textScore >= .70) {
-        $("#box1").text("").css("background", ("#62FA44"))
+        $("#box-1").text("").css("background", ("#62FA44"))
       }
         else if (textScore <= .69 && textScore >= .60) {
-        $("#box1").text("").css("background", ("#90EE90"))
+        $("#box-1").text("").css("background", ("#90EE90"))
       }
         else if (textScore <= .59 && textScore >= .50) {
-        $("#box1").text("").css("background", ("#ADD8E6"))
+        $("#box-1").text("").css("background", ("#ADD8E6"))
       }
         else if (textScore <= .49 && textScore >= .40) {
-        $("#box1").text("").css("background", ("#13B4FF"))
+        $("#box-1").text("").css("background", ("#13B4FF"))
       }
         else if (textScore <= .39 && textScore >= .30) {
-        $("#box1").text("").css("background", ("#AB3FDD"))
+        $("#box-1").text("").css("background", ("#AB3FDD"))
       }
         else if (textScore <= .29 && textScore >= .20) {
-        $("#box1").text("").css("background", ("#FA8072"))
+        $("#box-1").text("").css("background", ("#FA8072"))
       }
         else if (textScore <= .19 && textScore >= .10) {
-        $("#box1").text("").css("background", ("#FA40BC"))
+        $("#box-1").text("").css("background", ("#FA40BC"))
       }
         else if (textScore <= .09 && textScore >= .00) {
-        $("#box1").text("").css("background", ("#E5071F"))
+        $("#box-1").text("").css("background", ("#E5071F"))
       };
+    })
  })
-  })
 });
+
+
+
 
 
 
