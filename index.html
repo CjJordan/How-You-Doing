@@ -1,8 +1,16 @@
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
 <head>
     <!-- Font Awesome link -->
+    <meta charset="utf-8">
+  	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+	  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	  <script src="https://code.jquery.com/jquery-3.2.0.js" integrity="sha256-wPFJNIFlVY49B+CuAIrDr932XSb6Jk3J1M22M3E2ylQ=" crossorigin="anonymous"></script>
+	  <link rel="stylesheet" href="main.css" type="text/css" media="all">
+	  <script src="algorithmia.js"></script>
+	  <script src="logic.js"></script>
     <script src="https://use.fontawesome.com/4c6396de4f.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -90,6 +98,7 @@
                          <div class="camera">
                             <video id="video">Video stream not available.</video>
                                 <button id="startbutton">Take photo</button> 
+                        </div>
                     </div>
                     <br>
          
@@ -114,13 +123,13 @@
                         <p id="selfieInvite">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;smi(<span style="color:skyblue">:</span>e&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
                         <br>
+                    </div>
+              </div>
 
                         <!-- pour out your <3 
             <p id="talkInvite">pour out your <i class="fa fa-heart" aria-hidden="true"></i></p> -->
                         <br>
                         <!-- <p id="sayText">(say what you want :)</p> -->
-                    </div>
-                </div>
 
                 <div class="medium-2 columns panel icons page-scroll" data-equalizer-watch>
                     <br>
