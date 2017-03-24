@@ -5,7 +5,7 @@ var config = {
     databaseURL: "https://howyoudoing-f3f3f.firebaseio.com",
     storageBucket: "howyoudoing-f3f3f.appspot.com",
     messagingSenderId: "737070940637"
-};
+}
 
 firebase.initializeApp(config);
 
@@ -205,4 +205,3 @@ function getEmotion() {
 	                 		}
 	              		}
 	  	});
-}
