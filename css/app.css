@@ -1,20 +1,58 @@
-/*p {
-	width: 50px;
-	height: 50px;
-	background-color: blue; 
-	float: left;
-	padding: 10px;
-	} */
-/*.page{
-    height:100%;
-    width:100%;
-}*/
-/*body,html{
-    height:100%;
-    width:100%;
+/* div.screen {
+    opacity: .95;
+    background: #666;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: fixed;
 }
-*/
-
+#loginIn {
+    position: fixed;
+    font-size: 40px;
+    height: 350px;
+    width: 350px;
+    color: white;
+    background: #FF4136;
+    border: 15px solid white;
+    margin-bottom: 2px;
+    margin-top: 20px;
+    background: #FF4136;
+    border-radius: 10%;
+    text-align: right;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin-top: -170px;
+    Negative half of height.
+    
+    margin-left: -175px;
+    Negative half of width.
+    
+    opacity: 100;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+input[type="textarea"]#loginIn::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 3;
+    color: #666;
+    text-align: center;
+} */
+/* #username {
+    border-radius: 10%;
+    width: 90%;
+    border: 2px solid #FF4136;
+    font-size: 26px;
+    background: white;
+    color: black;
+    float: center;
+    padding: 10px;
+}
+.sign {
+    border: .1px solid white;
+} */
 
 .off-canvas-content {
     overflow: hidden;
@@ -38,26 +76,26 @@ body {
     display: none;
 }
 .callout H1 {
- /*    font-family: 'Jura', sans-serif;
+    /*    font-family: 'Jura', sans-serif;
      font-family: 'Passion One', cursive;
      font-family: 'Comfortaa', cursive;    
  font-family: 'Syncopate', sans-serif;
  font-family: 'Gloria Hallelujah', cursive;
      font-family: 'Architects Daughter', cursive;
      font-family: 'Fascinate Inline', cursive; */
-            font-family: 'Lobster', cursive;
-                line-height: 180px;
-
-/*     font-weight: bold; */
+    
+    font-family: 'Lobster', cursive;
+    line-height: 180px;
+    /*     font-weight: bold; */
+    
     font-size: 150px;
-    -webkit-animation:bounce-top 0.9s both;
-    -moz-animation:bounce-top 0.9s both;
-    animation:bounce-top 0.9s both;
+    -webkit-animation: bounce-top 0.9s both;
+    -moz-animation: bounce-top 0.9s both;
+    animation: bounce-top 0.9s both;
 }
-
 .callout H4 {
     font-family: 'Lobster', cursive;
-        font-family: 'Syncopate', sans-serif;
+    font-family: 'Syncopate', sans-serif;
     letter-spacing: .05em;
     line-height: 3px;
 }
@@ -68,15 +106,11 @@ body {
     text-align: left;
 }
 /**{
-		background: #ff7bac;
-	}*/
+        background: #ff7bac;
+    }*/
 
 #talkInvite {
     font-size: 40px;
-    font-family: 'Gloria Hallelujah', cursive;
-    font-family: 'Architects Daughter', cursive;
-    font-family: 'Jura', sans-serif;
-    font-family: 'Passion One', cursive;
     font-family: 'Comfortaa', cursive;
     line-height: 3px;
     color: #FF4136;
@@ -96,44 +130,40 @@ body {
     border-radius: 40%;
     text-align: right;
 }
-
 /* #selfieColorButton:hover #selfieFrame {
     color:black;
 } */
 
-#smCameraButton{
-margin-left: 5px;
-margin-top: -10px;
-
+#smCameraButton {
+    margin-left: 5px;
+    margin-top: -10px;
 }
-
 #takeSelfieText {
-	font-family: 'Syncopate', sans-serif;
+    font-family: 'Syncopate', sans-serif;
     font-weight: bold;
     font-size: 18px;
     color: #FF4136;
 }
-
-
 #keepButton {
-    /*	float:left;*/
+    /*  float:left;*/
+    
     border: .1px solid white;
+    font-family: 'Comfortaa', cursive;
 }
-
 #deleteButton {
     /*float:left;*/
+    
     border: .1px solid white;
+    font-family: 'Comfortaa', cursive;
 }
 #storeTxtButton {
     /*float:left;*/
+    font-family: 'Comfortaa', cursive;
     border: .1px solid white;
 }
-
 #selfieColorButton {
-
     border: .1px solid white;
-    margin:0px;
-
+    font-family: 'Comfortaa', cursive;
 }
 #selfieFrame {
     font-size: 20px;
@@ -141,23 +171,22 @@ margin-top: -10px;
     line-height: 13px;
     padding: 20px;
     height: 240px;
-    width: 320px;
+    width: 80%;
     color: #FF4136;
-    margin-bottom: 2px;
+    margin-left: 15px;
     margin-top: 20px;
     background: white;
- border-radius: 10%;  
+    border-radius: 10%;
     text-align: right;
     border: 20px solid navajowhite;
     padding: 10px;
 }
-
 /*#giveText{
-		font-size: 30px;
-		color:#FF4136;
-		line-height: 6px;
-	
-	}*/
+        font-size: 30px;
+        color:#FF4136;
+        line-height: 6px;
+    
+    }*/
 
 #sayText {
     font-size: 20px;
@@ -173,19 +202,10 @@ margin-top: -10px;
     color: white;
 }
 #pencilColor:hover {
-    float: center;
-    width: 40%;
-    height: 40%;
-    margin-right: 80px;
-    padding: 0px;
-    border-style: none;
-    font-size: 350px;
-    color: #62FA44;
     color: navajowhite;
 }
 #getYourTextColor {
     /* @extend .transition*/
-    
     margin-top: 20px;
     background-color: #FF4136;
     border: 1px solid #FF4136;
@@ -193,14 +213,15 @@ margin-top: -10px;
     display: inline-block;
     box-sizing: border-box;
     padding: 20px 15px;
-    /*	    border-radius: 60px;*/
+    /*      border-radius: 60px;*/
     color: white;
     letter-spacing: 0.01em;
     position: relative;
     top: 20px;
     z-index: 1;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
+    font-family: 'Comfortaa', cursive;
 }
 #getYourTextColor:hover {
     color: white;
@@ -218,7 +239,6 @@ margin-top: -10px;
     border: 7px solid white;
     align-items: right;
     border-radius: 15%;
-
 }
 .box:hover {
     border-radius: 40%;
@@ -235,22 +255,14 @@ margin-top: -10px;
     border-style: none;
     color: white;
     font-size: 280px;
-/*     max-width: 400px;
+    /*     max-width: 400px;
 min-width: 100px;
 height: 400px;
 min-height: 100px; */
 }
 #cameraFeel:hover {
-    float: center;
-    width: 40%;
-    height: 40%;
-    margin-right: 80px;
-    padding: 0px;
-    border-style: none;
-    font-size: 280px;
-    color: #13b4ff;
     color: navajowhite;
-/*     max-width: 400px;
+    /*     max-width: 400px;
 min-width: 100px;
 height: 400px;
 min-height: 100px; */
@@ -259,22 +271,21 @@ min-height: 100px; */
     color: black;
     text-align: right;
 }
-
 #smCamera:hover {
-	color: navajowhite;
+    color: navajowhite;
     text-align: right;
 }
 /*#cameraFeel{
-		visibility: hidden;
-	}
-	
-	.camera:hover #cameraFeel {
-	   visibility: visible;
-	   font-size: 20px;
-		color:white;  
-	} 
+        visibility: hidden;
+    }
+    
+    .camera:hover #cameraFeel {
+       visibility: visible;
+       font-size: 20px;
+        color:white;  
+    } 
 
-	*/
+    */
 
 #pencilFeel {
     float: right;
@@ -284,22 +295,11 @@ min-height: 100px; */
     padding: 0px;
     color: white;
     font-size: 280px;
-/*     max-width: 400px;
-min-width: 100px;
-height: 400px;
-min-height: 100px; */
+
 }
 #pencilFeel:hover {
-    float: center;
-    width: 40%;
-    height: 40%;
-    margin-right: 80px;
-    padding: 0px;
-    border-style: none;
-    font-size: 280px;
-    color: #62FA44;
     color: navajowhite;
-/*     max-width: 400px;
+    /*     max-width: 400px;
 min-width: 100px;
 height: 400px;
 min-height: 100px; */
@@ -323,7 +323,8 @@ min-height: 100px; */
 #selfieCapture {
     clear: both;
     position: relative;
-/*     display: inline-block; */
+    /*     display: inline-block; */
+    
     max-width: 600px;
     min-width: 300px;
     height: 400px;
@@ -335,9 +336,7 @@ min-height: 100px; */
     margin: 20px 1px;
     font-family: "Helvetica", sans-serif;
     border: 7px solid #3e2b14;
-   
 }
-
 /* .icons {
     border-radius: 40px;
     padding: 10px 40px;
@@ -347,9 +346,8 @@ height: 400px;
 min-height: 300px;
 } */
 
-
 .feel {
-    color:white;
+    color: white;
     font-size: 18px;
 }
 .blue {
@@ -361,7 +359,7 @@ min-height: 300px;
 .blue:hover #blueFeel {
     visibility: visible;
     position: relative;
-    bottom:-40px;
+    bottom: -40px;
     right: -20px;
 }
 .purple {
@@ -373,7 +371,7 @@ min-height: 300px;
 .purple:hover #purpleFeel {
     visibility: visible;
     position: relative;
-    bottom:-40px;
+    bottom: -40px;
 }
 .pink {
     background: #FA40BC;
@@ -384,7 +382,7 @@ min-height: 300px;
 .pink:hover #pinkFeel {
     visibility: visible;
     position: relative;
-    bottom:-40px;
+    bottom: -40px;
 }
 .salmon {
     background: salmon;
@@ -395,7 +393,7 @@ min-height: 300px;
 .salmon:hover #salmonFeel {
     visibility: visible;
     position: relative;
-    bottom:-40px;
+    bottom: -40px;
 }
 .yellow {
     background: yellow;
@@ -406,7 +404,7 @@ min-height: 300px;
 .yellow:hover #yellowFeel {
     visibility: visible;
     position: relative;
-    bottom:-40px;
+    bottom: -40px;
 }
 .lightgreen {
     background: lightgreen;
@@ -417,7 +415,7 @@ min-height: 300px;
 .lightgreen:hover #lightgreenFeel {
     visibility: visible;
     position: relative;
-    bottom:-40px;
+    bottom: -40px;
 }
 .lightblue {
     background: lightblue;
@@ -428,7 +426,7 @@ min-height: 300px;
 .lightblue:hover #lightblueFeel {
     visibility: visible;
     position: relative;
-    bottom:-40px;
+    bottom: -40px;
 }
 .orange {
     background: orange;
@@ -439,7 +437,7 @@ min-height: 300px;
 .orange:hover #orangeFeel {
     visibility: visible;
     position: relative;
-    bottom:-40px;
+    bottom: -40px;
 }
 .lime {
     background: #62FA44;
@@ -450,7 +448,7 @@ min-height: 300px;
 .lime:hover #limeFeel {
     visibility: visible;
     position: relative;
-    bottom:-40px;
+    bottom: -40px;
 }
 .candycane {
     background: #E5071F;
@@ -461,7 +459,7 @@ min-height: 300px;
 .candycane:hover #candycaneFeel {
     visibility: visible;
     position: relative;
-    bottom:-40px;
+    bottom: -40px;
 }
 #offCanvasBottom1 {
     background: white;
@@ -469,20 +467,19 @@ min-height: 300px;
 /*form*/
 
 form {
-    clear:both;
+    clear: both;
     position: relative;
     display: inline-block;
     max-width: 500px;
     min-width: 300px;
     height: 400px;
-    min-height:300px; 
+    min-height: 300px;
     box-sizing: border-box;
     padding: 30px 20px;
     background-color: white;
     border-radius: 40px;
     margin: 40px 20px;
-    font-family: "Helvetica",
-    sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-weight: light;
     text-align: center;
     -webkit-font-smoothing: antialiased;
@@ -490,7 +487,7 @@ form {
     padding: 10px;
 }
 Form:hover {
-    box-shadow: inset 0 0 0 7px #DEDEDE;
+    box-shadow: inset 0 0 0 10px navajowhite;
 }
 #inputText {
     appearance: none;
@@ -506,38 +503,38 @@ Form:hover {
     font-weight: 100;
     letter-spacing: 0.01em;
     position: relative;
-    top:60px;
+    top: 60px;
     z-index: 1;
 }
-
 input::-webkit-input-placeholder {
     font-size: 16px;
     line-height: 3;
-    color:white;
+    color: white;
     text-align: center;
 }
-
 #inputText:hover {
     outline: none;
     background: salmon;
     color: white;
-/*     margin-top: 30px;
+    /*     margin-top: 30px;
 margin: 40px 20px; */
+    
     font-family: "Georgia";
 }
 #inputText:focus {
     outline: none;
     background: salmon;
     color: white;
-/*     margin-top: 30px;
+    /*     margin-top: 30px;
 margin: 40px 20px; */
+    
     font-style: italic;
     font-family: "Georgia";
 }
 #yourTextColor {
     border-radius: 20%;
     height: 3%;
-    width:3% background:white;
+    width: 3% background: white;
 }
 .question {
     position: relative;
@@ -563,6 +560,7 @@ margin: 40px 20px; */
 label:focus {
     z-index: -1;
 } */
+
 button {
     /* @extend .transition*/
     
@@ -573,12 +571,13 @@ button {
     display: inline-block;
     box-sizing: border-box;
     padding: 20px 15px;
-    /*	    border-radius: 60px;*/
+    /*      border-radius: 60px;*/
+    
     color: white;
     font-weight: 100;
     letter-spacing: 0.1em;
     position: relative;
-    top:20px;
+    top: 20px;
     z-index: 1;
     font-size: 18px;
     font-weight: bold;
@@ -601,14 +600,15 @@ button #getColorButton:focus {
     text-align: center;
     line-height: 0px;
     visibility: visible;
-    float:left;
+    float: left;
     background: white;
     color: #FF4136;
     letter-spacing: none;
-    margin-top:2px;
+    margin-top: 2px;
     border: .5px solid #666;
     font-family: 'Nova Mono', monospace;
     font-family: 'Space Mono', monospace;
+    font-family: 'Comfortaa', cursive;
 }
 #yearButton:hover {
     color: white;
@@ -619,20 +619,20 @@ button #getColorButton:focus {
 /*#yearButton:hover */
 /*.off-canvas-wrapper .position-bottom {
 
-	 height:100%;   
+     height:100%;   
 } 
 */
 /*MY VERSION.off-canvas-wrapper 
 
-	STACKOVERFLOW SUGGESTIONS 
-	.off-canvas-wrap,.inner-wrap{
+    STACKOVERFLOW SUGGESTIONS 
+    .off-canvas-wrap,.inner-wrap{
     height:100%;   
 }*/
 /* YEAR IN COLOR CALENDAR*/
 
 ul {
     list-style-type: none;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 .yearHeader {
     padding: 0px;
@@ -648,7 +648,7 @@ ul {
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 .yearHeader .prev {
     float: left;
@@ -660,20 +660,20 @@ ul {
     padding-top: 10px;
     color: #FF4136;
 }
-/*	.dekCalendar {
-	    margin: 0;
-	    padding: 10px 0;
-	    background-color: black;
-	    background-color: navajowhite;
-	    box-sizing:border-box;
-	    color: white;
-	    font-family: sans-serif;
-	   
-	}*/
+/*  .dekCalendar {
+        margin: 0;
+        padding: 10px 0;
+        background-color: black;
+        background-color: navajowhite;
+        box-sizing:border-box;
+        color: white;
+        font-family: sans-serif;
+       
+    }*/
 
 .dekCalendar li {
     display: inline-block;
-    box-sizing:border-box;
+    box-sizing: border-box;
     width: 13.6%;
     color: white;
     text-align: center;
@@ -681,23 +681,22 @@ ul {
 }
 .days {
     padding: 10px;
-    background:#FF4136;
+    background: #FF4136;
     margin: 0;
     font-family: sans-serif;
 }
 .days li {
     list-style-type: none;
     display: inline-block;
-    box-sizing:border-box;
+    box-sizing: border-box;
     width: 40px;
     height: 40px;
     text-align: center;
     margin-bottom: .5px;
-    font-size:12px;
+    font-size: 12px;
     color: white;
-    border:1px white solid;
-    border-radius:20%;
-
+    border: 1px white solid;
+    border-radius: 20%;
 }
 #boxesHere li{
     list-style-type: none;
@@ -706,50 +705,38 @@ ul {
     width: 40px;
     height: 40px;
     text-align: center;
-    margin-bottom: .5px;
-    margin-top: .5px;
+    margin: .5px;
     font-size:12px;
-    background: #FF4136;
-    border:1px white solid;
+    background: white;
+    border:1px #B9B9B9 solid;
     border-radius:20%;
     color:white;
 }
-
-
 .days li .monthy {
     list-style-type: none;
     display: inline-block;
     background: white;
     color: black;
     color: #FF4136;
-    font-size:15px;
+    font-size: 15px;
     font-weight: bold;
-    font-family: 'Syncopate',
-    sans-serif;
+    font-family: 'Syncopate', sans-serif;
     margin-bottom: .5px;
     text-align: center;
     width: 40px;
     height: 40px;
-    border-radius:18%;
+    border-radius: 18%;
 }
-
 li:hover {
-	    box-shadow: 1px 1px white, 2px 2px white, 3px 3px white;
+    box-shadow: 1px 1px white, 2px 2px white, 3px 3px white;
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
-    color:green;
+    color: green;
 }
-
-li #jan1 {
-
+li #jan1 {} li #jan1:hover {
+    color: yellow;
+    background: black;
 }
-
-li #jan1:hover {
-	color:yellow;
-	background: black;
-	
-}
-
 #yearInColorHead {
     font-family: 'Syncopate', sans-serif;
     font-size: 30px;
@@ -757,349 +744,340 @@ li #jan1:hover {
     text-align: center;
 }
 /* Add media queries for smaller screens */
-/* ---------------------------------------------------Lg---------- */
+/* --------------------------------------Lg---------- */
+
 @media screen and (max-width: 768px) {
     .weekdays li,
     .days li {
-        width: 13.1%;     }
-
-.callout H1 {
-    font-family: 'Lobster', cursive;
-    font-size: 75px;
-    line-height: 100px;
-}    
-
-#pencilFeel {
-    float: right;
-    width: 40%;
-    height: 40%;
-    margin-right: 50px;
-    padding: 0px;
-    color: white;
-    font-size: 220px;
-
-}
-
-#textPencil {
-    font-size: 18px;
-    color: white;
-    padding-left: none;
-    text-align: left;
-    font-family: 'Syncopate', sans-serif;
-    margin-top: 20px;
-}
-
-#cameraFeel {
-    float: right;
-    width: 40%;
-    height: 40%;
-    margin-right: 50px;
-    padding: 0px;
-    color: white;
-    font-size: 220px;
-}
-
-#textCamera {
-    font-size: 18px;
-    color: white;
-    padding-left: none;
-    text-align: left;
-    font-family: 'Syncopate', sans-serif;
-    margin-top: 20px;
-}
-#selfieFrame {
-    padding: 0px;
-    height: 170px;
-    width: 250px;
-    color: #FF4136;
-    margin-bottom: 0px;
-    margin-top: 5px;
-    background: white;
- border-radius: 10%;  
-    text-align: right;
-    border: 10px solid navajowhite;
-    padding: 0px;
-}
-
-#selfieCapture {
-    clear: both;
-    position: relative;
-/*     display: inline-block; */
-    height: 200px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 40px;
-    margin: 1px;
-    font-family: "Helvetica", sans-serif;
-    border: 7px solid #3e2b14;
-   
-}
-
-#selfieInvite {
-    font-size: 30px;
-    font-family: 'Comfortaa', cursive;
-    line-height: 3px;
-    color: #FF4136;
-    margin-bottom: 0px;
-    margin-top: -70px;
-    background: white;
-    border-radius: 40%;
-    text-align: right;
-}
-
-.small-12 {
-    padding:0px;
-}
-
-#storeTxtButton {
-    /*float:left;*/
-    font-size: 12px;
-    border: .1px solid white;
-            padding: 12px;
-}
-#selfieColorButton {
-    /* line-height: 18px; */
-/*     border: .1px solid white; */
+        width: 13.1%;
+    }
+    .callout H1 {
+        font-family: 'Lobster', cursive;
+        font-size: 75px;
+        line-height: 100px;
+    }
+    #pencilFeel {
+        float: right;
+        width: 40%;
+        height: 40%;
+        margin-right: 50px;
+        padding: 0px;
+        color: white;
+        font-size: 220px;
+    }
+    #textPencil {
+        font-size: 18px;
+        color: white;
+        padding-left: none;
+        text-align: left;
+        font-family: 'Syncopate', sans-serif;
+        margin-top: 20px;
+    }
+    #cameraFeel {
+        float: right;
+        width: 40%;
+        height: 40%;
+        margin-right: 50px;
+        padding: 0px;
+        color: white;
+        font-size: 220px;
+    }
+    #textCamera {
+        font-size: 18px;
+        color: white;
+        padding-left: none;
+        text-align: left;
+        font-family: 'Syncopate', sans-serif;
+        margin-top: 20px;
+    }
+    #selfieFrame {
+        padding: 0px;
+        height: 170px;
+        width: 250px;
+        color: #FF4136;
+        margin-bottom: 0px;
+        margin-top: 5px;
+        margin-left: -20px;
+        background: white;
+        border-radius: 10%;
+        text-align: right;
+        border: 10px solid navajowhite;
+        padding: 0px;
+    }
+    #selfieCapture {
+        clear: both;
+        position: relative;
+        /*     display: inline-block; */
+        
+        height: 200px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 40px;
+        margin: 1px;
+        font-family: "Helvetica", sans-serif;
+        border: 7px solid #3e2b14;
+    }
+    #selfieInvite {
+        font-size: 30px;
+        font-family: 'Comfortaa', cursive;
+        line-height: 3px;
+        color: #FF4136;
+        margin-bottom: 0px;
+        margin-top: -70px;
+        background: white;
+        border-radius: 40%;
+        text-align: right;
+    }
+    .small-12 {
+        padding: 0px;
+    }
+    #storeTxtButton {
+        /*float:left;*/
+        
+        font-size: 12px;
+        border: .1px solid white;
+        padding: 12px;
+        font-family: 'Comfortaa', cursive;
+    }
+    #selfieColorButton {
+        /* line-height: 18px; */
+        /*     border: .1px solid white; */
+        
         font-size: 12px;
         padding: 10px;
-}
-
-#keepButton {
-    /*  float:left;*/
-    border: .1px solid white;
-            font-size: 12px;
-        padding: 12px;
-}
-
-#deleteButton {
-    /*float:left;*/
-    border: .1px solid white;
-            font-size: 12px;
-        padding: 12px;
-}
-
-.medium-2 {
-    width: 10%;
-    padding: 0px;
-}
-
-#talkInvite {
-    font-size: 25px;
-   font-family: 'Comfortaa', cursive;
-    line-height: 3px;
-    color: #FF4136;
-    margin-bottom: 2px;
-    margin-top: 20px;
-    background: white;
-    border-radius: 40%;
-}
-
-#inputText {
-    appearance: none;
-    background-color: none;
-    border: 1px solid #FF4136;
-    line-height: 0;
-    font-size: 24px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 15px 15px;
-    border-radius: 60px;
-    color: white;
-    font-weight: 100;
-    letter-spacing: 0.01em;
-    position: relative;
-    top:60px;
-    z-index: 1;
-}
-/* ---------------------------------------------------Md---------- */
-@media screen and (max-width: 480px) {
-    .weekdays li,
-    .days li {
-        width: 12.5%;
+        font-family: 'Comfortaa', cursive;
     }
-    .days li .active {
-        padding: 2px;
+    #keepButton {
+        /*  float:left;*/
+        
+        border: .1px solid white;
+        font-size: 12px;
+        padding: 12px;
+        font-family: 'Comfortaa', cursive;
     }
+    #deleteButton {
+        /*float:left;*/
+        
+        border: .1px solid white;
+        font-size: 12px;
+        padding: 12px;
+        font-family: 'Comfortaa', cursive;
+    }
+    .medium-2 {
+        width: 10%;
+        padding: 0px;
+    }
+    #talkInvite {
+        font-size: 25px;
+        font-family: 'Comfortaa', cursive;
+        line-height: 3px;
+        color: #FF4136;
+        margin-bottom: 2px;
+        margin-top: 20px;
+        background: white;
+        border-radius: 40%;
+    }
+    #inputText {
+        appearance: none;
+        background-color: none;
+        border: 1px solid #FF4136;
+        line-height: 0;
+        font-size: 24px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 15px;
+        border-radius: 60px;
+        color: white;
+        font-weight: 100;
+        letter-spacing: 0.01em;
+        position: relative;
+        top: 60px;
+        z-index: 1;
+    }
+    /* --------------------------------Md---------- */
+    
+    @media screen and (max-width: 480px) {
+        .weekdays li, .days li {
+            width: 12.5%;
+        }
+        .days li .active {
+            padding: 2px;
+        }
+        #textPencil {
+            font-size: 18px;
+            color: white;
+            padding-left: none;
+            text-align: center;
+            font-family: 'Syncopate', sans-serif;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
 
-#textPencil {
-    font-size: 18px;
-    color: white;
-    padding-left: none;
-    text-align: left;
-    font-family: 'Syncopate', sans-serif;
-    margin-top: 20px;
-    margin-left:10px;
-}
-#selfieCapture {
-    clear: both;
-    position: relative;
-/*     display: inline-block; */
-    height: 200px;
-    width: 450px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 40px;
-    margin: 1px;
-    font-family: "Helvetica", sans-serif;
-    border: 7px solid #3e2b14;
-   
-}
-
-#storeTxtButton {
-    /*float:left;*/
-    font-size: 22px;
+        #textCamera {
+            text-align: center;
+        }
+        #selfieCapture {
+            clear: both;
+            position: relative;
+            /*     display: inline-block; */
+            
+            height: 200px;
+            width: 450px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 40px;
+            margin: 1px;
+            font-family: "Helvetica", sans-serif;
+            border: 7px solid #3e2b14;
+        }
+        #storeTxtButton {
+            /*float:left;*/
+            
+            font-size: 22px;
             padding: 12px;
-                float:center;
-                    line-height: 20px;
-                    border:none;
-}
-#selfieColorButton {
-    /* line-height: 18px; */
-/*     border: .1px solid white; */
-        font-size: 22px;
-    line-height: 20px;
-                    padding: 12px;
-                    border:none;
+            float: center;
+            line-height: 20px;
+            border: none;
+        }
+        #selfieColorButton {
+            /* line-height: 18px; */
+            /*     border: .1px solid white; */
+            
+            font-size: 22px;
+            line-height: 20px;
+            padding: 12px;
+            border: #FF4136;
+        }
+        #keepButton {
+            /*  float:left;*/
+            
+            float: left;
+            line-height: 20px;
+            font-size: 22px;
+            padding: 12px;
+            border: none;
+        }
+        #deleteButton {
+            font-size: 22px;
+            padding: 12px;
+            float: left;
+            line-height: 20px;
+            border: none;
+        }
+        .small-12 {
+            padding: 0px;
+            width: 100%;
+        }
+        button {
+            margin-top: 0px;
+            letter-spacing: .01em;
+        }
+        #selfieFrame {
+            padding: 20px;
+            height: 240px;
+            width: 75%;
+            margin-left: 30px;
+        }
+
+        #pencilColor {
+            margin-right: 190px;
+        }
     }
-#keepButton {
-    /*  float:left;*/
-    float:left;
-    line-height: 20px;
-            font-size: 22px;
-        padding: 12px;
-        border:none;
-}
-
-#deleteButton {
-            font-size: 22px;
-        padding: 12px;
-            float:left;
-                line-height: 20px;
-                border:none;
-}
-
-.small-12 {
-    padding:0px;
-    width: 100%;
-}
-button {
-    margin-top: 0px;
-    letter-spacing: .01em;
-
-}
-
-#selfieFrame {
-    padding: 20px;
-    height: 240px;
-    width: 75%;
-}
-
-
-}
-/* ---------------------------------------------------Sm---------- */
-@media screen and (max-width: 320px) {
-    .weekdays li,
-    .days li {
-        width: 12.2%;}
-
+    /* ---------------------------------Sm---------- */
+    
+    @media screen and (max-width: 320px) {
+        .weekdays li, .days li {
+            width: 12.2%;
+        }
         .callout H4 {
-    font-size: 20px;
-    line-height: 25px;
-}    
-
-#pencilFeel {
-    float: right;
-    width: 40%;
-    height: 40%;
-    margin-right: 50px;
-    padding: 0px;
-    color: white;
-    font-size: 180px;
-
-}
-
-#cameraFeel {
-    float: right;
-    width: 40%;
-    height: 40%;
-    margin-right: 50px;
-    padding: 0px;
-    color: white;
-    font-size: 180px;
-}
-
-#selfieFrame {
-    padding: 0px;
-    height: 170px;
-    width: 1800px;
-    color: #FF4136;
-    margin-bottom: 0px;
-    margin-top: 5px;
-    background: white;
- border-radius: 10%;  
-    text-align: right;
-    border: 10px solid navajowhite;
-    padding: 0px;
-}
-
-#selfieCapture {
-    clear: both;
-    position: relative;
-/*     display: inline-block; */
-    width: 175px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 40px;
-    margin: 1px;
-    font-family: "Helvetica", sans-serif;
-    border: 7px solid #3e2b14;
-   
-}
-
-#selfieFrame {
-   padding: 20px;
-    height: 240px;
-    width: 75%;
-    color: #FF4136;
-    margin-bottom: 2px;
-    margin-top: 20px;
-    background: white;
- border-radius: 10%;  
-    text-align: right;
-    border: 20px solid navajowhite;
-    padding: 10px;
-}
-
-form {
-    clear:both;
-    position: relative;
-    display: inline-block;
-    max-width: 500px;
-    min-width: 300px;
-    height: 400px;
-    min-height:300px; 
-    box-sizing: border-box;
-    padding: 30px 20px;
-    background-color: white;
-    border-radius: 40px;
-    margin-right: 70px;
-    font-family: "Helvetica",
-    sans-serif;
-    font-weight: light;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-    border: 6px solid #3e2b14;
-    padding: 10px;
-}
-
-#pencilColor {
-    font-size: 200px;
-    float: right;
-    width: 40%;
-    height: 40%;
-    margin-right: 70px;
-    padding: 0px;
-    color: white;
-}
-
-}
+            font-size: 20px;
+            line-height: 25px;
+        }
+        #pencilFeel {
+            float: right;
+            width: 40%;
+            height: 40%;
+            margin-right: 100px;
+            padding: 0px;
+            color: white;
+            font-size: 180px;
+        }
+        #cameraFeel {
+            float: center;
+            width: 40%;
+            height: 40%;
+            margin-right: 150px;
+            padding: 0px;
+            color: white;
+            font-size: 180px;
+        }
+        #selfieFrame {
+            padding: 0px;
+            height: 170px;
+            width: 1800px;
+            color: #FF4136;
+            margin-bottom: 0px;
+            margin-top: 5px;
+            background: white;
+            border-radius: 10%;
+            text-align: right;
+            border: 10px solid navajowhite;
+            padding: 0px;
+        }
+        #selfieCapture {
+            clear: both;
+            position: relative;
+            /*     display: inline-block; */
+            
+            width: 90%;
+            padding: 10px;
+            background-color: white;
+            border-radius: 40px;
+            margin-left: -8px;
+            font-family: "Helvetica", sans-serif;
+            border: 7px solid #3e2b14;
+        }
+        #selfieFrame {
+            padding: 20px;
+            height: 240px;
+            width: 75%;
+            color: #FF4136;
+            margin-bottom: 2px;
+            margin-left:10px;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10%;
+            text-align: right;
+            border: 20px solid navajowhite;
+            padding: 10px;
+        }
+        form {
+            clear: both;
+            position: relative;
+            display: inline-block;
+            max-width: 500px;
+            min-width: 300px;
+            height: 400px;
+            min-height: 300px;
+            box-sizing: border-box;
+            padding: 30px 20px;
+            background-color: white;
+            border-radius: 40px;
+            margin-left: -18px;
+            font-family: "Helvetica", sans-serif;
+            font-weight: light;
+            text-align: center;
+            -webkit-font-smoothing: antialiased;
+            border: 6px solid #3e2b14;
+            padding: 10px;
+        }
+        #pencilColor {
+            font-size: 220px;
+            float: right;
+            width: 40%;
+            height: 40%;
+            margin-left: 30px;
+            padding: 0px;
+            color: white;
+        }
+    }
